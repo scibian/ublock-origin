@@ -1,0 +1,1188 @@
+<html>
+<head><title>uBlock Origin Version History</title></head>
+<body>
+
+<h2>uBlock Origin 1.9.4 - August 29, 2016</h2>
+See <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/3666cb23218e9f6db3bd07b400ff5ec8fcdae479e947389b50caf2ec2fe1849d/https%3A//github.com/gorhill/uBlock/releases/tag/1.9.4">release notes</a>.
+<br/>&nbsp;
+<br/><b>Fixed:</b>
+<br/>&nbsp;
+<br/><ul><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/2c8c666bfb6fbc095c5ba0781c26b8d06ceac5f1792a79764e032a22cd8f2920/https%3A//github.com/gorhill/uBlock/issues/1943">Websocket blocked when easylist match</a></li></ul>
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/b224cf8e59a84d8824844aa88fe38880952c5232bb1c840b72e3e2b5695dd2c1/https%3A//github.com/gorhill/uBlock/compare/1.9.2...1.9.4">Commit history between 1.9.2 and 1.9.4</a>.
+
+<h2>uBlock Origin 1.9.2 - August 28, 2016</h2>
+See <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/ca30651a8a0733bc31d23f5f265ec7caca27aa97c91f5511da190801752a40b1/https%3A//github.com/gorhill/uBlock/releases/tag/1.9.2">release notes</a>.
+<br/>&nbsp;
+<br/><b>Fixed:</b>
+<br/>&nbsp;
+<br/><ul><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/e0c11159deffd10ce1071b562afa3f6345b8a65b6510fbe7789a3eb72b5e682a/https%3A//github.com/gorhill/uBlock/issues/1936%23issuecomment-242964554">Fixed websocket-blocking quirk reported in comment of issue 1936</a><ul><li>The Content Security Policy expression causing WebSocket connections to be blocked for a page should not be also applied to embedded frames on the page (unless of course there is a filter to block WebSocket connections for the frame's origin).</li></ul></li></ul>
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/bdcbd74966e0a40c4886e5a4347c3735a986211aa058be7a517402acfb8ca979/https%3A//github.com/gorhill/uBlock/compare/1.9.0...1.9.2">Commit history between 1.9.0 and 1.9.2</a>.
+
+<h2>uBlock Origin 1.9.0 - August 28, 2016</h2>
+See <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/f2435e8113db7fa6e063e8da7b2eb96e35ec9662d7e0318f0d65eacb05a58004/https%3A//github.com/gorhill/uBlock/releases/tag/1.9.0">release notes</a>.
+<br/>&nbsp;
+<br/><b>New:</b>
+<br/>&nbsp;
+<br/>Cosmetic filtering operator `matches-css()`, to remove any DOM element which matches specific CSS properties (see <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/48bec4993187677f35ca9c96fce684aad352add93b072bc92fc90f9244f487f3/https%3A//github.com/uBlockOrigin/uAssets/issues/84">issue 84</a>).
+<br/>&nbsp;
+<br/>It is now possible to tell uBO to ignore all generic cosmetic filters from loaded filter lists (see <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/b4191d3f50a5487733e32f13db64f7efcd6b485d658815310c365a8093fb9c61/https%3A//github.com/gorhill/uBlock/issues/1892">issue 1892</a>).
+<br/>&nbsp;
+<br/><b>Fixed:</b>
+<br/>&nbsp;
+<br/><ul><li>[Firefox] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/75c2307715afd2a7936f73ac96a0c7091e9fdc6e3dc6555634a60944a849b718/https%3A//bugzilla.mozilla.org/show_bug.cgi%3Fid=1232354">Bug 1232354 - uBlock Origin makes the loading of a long page hang the content process</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/2d42534c1fbef33704e9d87e217a73cc5a921e143829bae321919f714d7e8466/https%3A//github.com/gorhill/uBlock/issues/1929">Hostname anchor matching behavior</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/852e7066289df434af9d5f5789d124b46e3aee0f6c001227e03d647f2e8171b3/https%3A//github.com/gorhill/uBlock/issues/1927">Browser hangs with uBlock + uMatrix + disabled javascript</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/14fda1712c2f03a04d5b68b6ec376f5c433b9e240a2335d40d6c0d4ae54b5fa8/https%3A//github.com/gorhill/uBlock/issues/1909">uBO fails to disable inline script execution on aranzulla.it</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/4e3559c2d1e81819ad43fb0b9ac04c60d9d6ca9c44ebc688d6d69666678d2ffc/https%3A//github.com/gorhill/uBlock/issues/1903">Popup filter closes a page as popunder</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/0e2c9b7570ae07a9bed3f602693d7bcd1b9a9a138a76f1f68a0eb56da2b494e6/https%3A//github.com/gorhill/uBlock/issues/1901">Element picker has a problem with creating rules with specific unicode/HTML-code</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/a616a893957a47928bb9f1f1c623f69873805d6f3f591c46aecdeceb965368b2/https%3A//github.com/gorhill/uBlock/issues/1897">NSFW - wrong pornhub filter proposed by element picker</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/b4191d3f50a5487733e32f13db64f7efcd6b485d658815310c365a8093fb9c61/https%3A//github.com/gorhill/uBlock/issues/1892">Add "Ignore generic cosmetic filters" option in the "3rd-party filters" pane</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/b5875e9d8526ab895b4bda783024e8f0922e7cb2cc5386c832b3833209907658/https%3A//github.com/gorhill/uBlock/issues/1891">`script:inject` filters are discarded when disabling the parsing of cosmetic filters</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/481eb57af567685f7cb4ac9a27961ca21601105c13a1d38d3c7b41b84d6a5e7c/https%3A//github.com/gorhill/uBlock/pull/1860">Optimize SVG icons</a> [fixed by @asamuzaK]</li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/4152a152384f46ba8be1f72e89d11b3b6bb68c1e8deef20ea547eabce37fbfc5/https%3A//github.com/gorhill/uBlock/issues/1856">Cosmetically filtered DOM elements in embedded frames are not counted</a></li></ul>
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/26a310bd2292167c2b1b996fff4359d706b7591f08eb39c239d0131dc8107a4e/https%3A//github.com/gorhill/uBlock/compare/1.8.4...1.9.0">Commit history between 1.8.4 and 1.9.0</a>.
+
+<h2>uBlock Origin 1.8.5rc4 - August 27, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/665bd85fafd976e41e741eecda8f8701f9f6ea368e8a3b5e01f4e809cec35fdf/https%3A//github.com/gorhill/uBlock/releases/tag/1.8.5rc4">https://github.com/gorhill/uBlock/releases/tag/1.8.5rc4</a>
+<br/>Commit history since 1.8.4: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/37399a04b6e6b4a43f680622a073d51cd0de3950588a48c74205d4f1d47f3ce6/https%3A//github.com/gorhill/uBlock/compare/1.8.4...1.8.5rc4">https://github.com/gorhill/uBlock/compare/1.8.4...1.8.5rc4</a>
+
+<h2>uBlock Origin 1.8.5rc3 - August 25, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/34e3e7cae2a045b442ea9661260e98acabface194223543e319dfbc7f82666c0/https%3A//github.com/gorhill/uBlock/releases/tag/1.8.5rc3">https://github.com/gorhill/uBlock/releases/tag/1.8.5rc3</a>
+<br/>Commit history since 1.8.4: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/8159749fbfb1273cf703ef490b28097979d5761999731f736efdd20a78f3dc33/https%3A//github.com/gorhill/uBlock/compare/1.8.4...1.8.5rc3">https://github.com/gorhill/uBlock/compare/1.8.4...1.8.5rc3</a>
+
+<h2>uBlock Origin 1.8.5rc2 - August 23, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/91b1617cdf1ccf4d4c68e9823b3530ff0aa892f0f242605e0603b8d99934ddea/https%3A//github.com/gorhill/uBlock/releases/tag/1.8.5rc2">https://github.com/gorhill/uBlock/releases/tag/1.8.5rc2</a>
+<br/>Commit history since 1.8.4: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/01c04d7099083c56bebd73df248a8df6d4d61063670060d5a3fe0316808c0edc/https%3A//github.com/gorhill/uBlock/compare/1.8.4...1.8.5rc2">https://github.com/gorhill/uBlock/compare/1.8.4...1.8.5rc2</a>
+
+<h2>uBlock Origin 1.8.5rc1 - August 22, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/2dae76035a4866dab67a8b7800b7f7439f58b54b704d1d6c14c8a76daabb6917/https%3A//github.com/gorhill/uBlock/releases/tag/1.8.5rc1">https://github.com/gorhill/uBlock/releases/tag/1.8.5rc1</a>
+<br/>Commit history since 1.8.4: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/cb9995876a55afe27218e4c42bec616fcaeb955b6b0469a34088b21487f42bca/https%3A//github.com/gorhill/uBlock/compare/1.8.4...1.8.5rc1">https://github.com/gorhill/uBlock/compare/1.8.4...1.8.5rc1</a>
+
+<h2>uBlock Origin 1.8.5rc0 - August 18, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/6fa6f26e65d6785ae7753ec00b4ef68ca8bf75b413a1fd4ac82de0628c6904ab/https%3A//github.com/gorhill/uBlock/releases/tag/1.8.5rc0">https://github.com/gorhill/uBlock/releases/tag/1.8.5rc0</a>
+<br/>Commit history since 1.8.4: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/3804891a9dc92bcd986112718e69785dbd8dd61135740496d1a63910f077fd90/https%3A//github.com/gorhill/uBlock/compare/1.8.4...1.8.5rc0">https://github.com/gorhill/uBlock/compare/1.8.4...1.8.5rc0</a>
+
+<h2>uBlock Origin 1.8.5b7 - August 17, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/8d76bf2855efdd591d6c4cc2b94178af96991493c730cf8b0ff58fc3e2f191a7/https%3A//github.com/gorhill/uBlock/releases/tag/1.8.5b7">https://github.com/gorhill/uBlock/releases/tag/1.8.5b7</a>
+<br/>Commit history since 1.8.4: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/dd38c48a20a06a6fb5d01cabb32c4d318a877a87a4f5935f405a364d5a2b342e/https%3A//github.com/gorhill/uBlock/compare/1.8.4...1.8.5b7">https://github.com/gorhill/uBlock/compare/1.8.4...1.8.5b7</a>
+
+<h2>uBlock Origin 1.8.5b6 - August 16, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/193e3d5ef0b4140bc11aae4c73ada072d1056b6fd45014c6fe106a9776813741/https%3A//github.com/gorhill/uBlock/releases/tag/1.8.5b6">https://github.com/gorhill/uBlock/releases/tag/1.8.5b6</a>
+<br/>Commit history since 1.8.4: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/4f05f359f005a2306c2ec108a2317f540cebc263160edb6193c34f2f1c16b0a3/https%3A//github.com/gorhill/uBlock/compare/1.8.4...1.8.5b6">https://github.com/gorhill/uBlock/compare/1.8.4...1.8.5b6</a>
+
+<h2>uBlock Origin 1.8.5b5 - August 14, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/161e582f8b188cb6fea2c191d8a7725670b110fa8d800473e59c81d14e7470a7/https%3A//github.com/gorhill/uBlock/releases/tag/1.8.5b5">https://github.com/gorhill/uBlock/releases/tag/1.8.5b5</a>
+<br/>Commit history since 1.8.4: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/5d828ff420e75f7e3ac9bc3f12a5680606f635cdbacfdb5c4d01100db0d7ccf3/https%3A//github.com/gorhill/uBlock/compare/1.8.4...1.8.5b5">https://github.com/gorhill/uBlock/compare/1.8.4...1.8.5b5</a>
+
+<h2>uBlock Origin 1.8.5b4 - August 14, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/339caaba497f7536897ffdd1987dacab0cea997efa1c13025e7f6c9e4ec4919c/https%3A//github.com/gorhill/uBlock/releases/tag/1.8.5b4">https://github.com/gorhill/uBlock/releases/tag/1.8.5b4</a>
+<br/>Commit history since 1.8.4: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/6a49c2d9999d60b86269a274555c86a854ffcaaa016e417cafdb61c563704bf8/https%3A//github.com/gorhill/uBlock/compare/1.8.4...1.8.5b4">https://github.com/gorhill/uBlock/compare/1.8.4...1.8.5b4</a>
+
+<h2>uBlock Origin 1.8.5b3 - August 13, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/6a73b4d3a47ff8bb046871be0a2364951a7d75e2b8f1f092b70139e6d2d8676a/https%3A//github.com/gorhill/uBlock/releases/tag/1.8.5b3">https://github.com/gorhill/uBlock/releases/tag/1.8.5b3</a>
+<br/>Commit history since 1.8.4: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/bac1b21136f171aecaf8d05cebc3d82fb81a020fbece4e5de2d1b956f59ec381/https%3A//github.com/gorhill/uBlock/compare/1.8.4...1.8.5b3">https://github.com/gorhill/uBlock/compare/1.8.4...1.8.5b3</a>
+
+<h2>uBlock Origin 1.8.5b2 - August  8, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/de1b7bc301c96db1fe10008d382598b4b79365bf8aeacdb6fc865b37c4246ee7/https%3A//github.com/gorhill/uBlock/releases/tag/1.8.5b2">https://github.com/gorhill/uBlock/releases/tag/1.8.5b2</a>
+<br/>Commit history since 1.8.4: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/0a4a49e9eddc21ef35adc3bbde9b8c84d8947b48bac0ff332aea762c650362b8/https%3A//github.com/gorhill/uBlock/compare/1.8.4...1.8.5b2">https://github.com/gorhill/uBlock/compare/1.8.4...1.8.5b2</a>
+
+<h2>uBlock Origin 1.8.5b1 - August  8, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/ff482535dfdcc9470aa7962a977302f60d557070c895fcf4b365108f15046e9e/https%3A//github.com/gorhill/uBlock/releases/tag/1.8.5b1">https://github.com/gorhill/uBlock/releases/tag/1.8.5b1</a>
+<br/>Commit history since 1.8.4: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/3bcfc9c324e471fdb18e67fae7b07b1436eabbf3b4e523c67e99bd9a9167ed68/https%3A//github.com/gorhill/uBlock/compare/1.8.4...1.8.5b1">https://github.com/gorhill/uBlock/compare/1.8.4...1.8.5b1</a>
+
+<h2>uBlock Origin 1.8.5b0 - August  7, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/f2b72f97ede35b24cf46230e7bac53b17ba45308ab61b5f93e1e960271716ae6/https%3A//github.com/gorhill/uBlock/releases/tag/1.8.5b0">https://github.com/gorhill/uBlock/releases/tag/1.8.5b0</a>
+<br/>Commit history since 1.8.4: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/41db095969c17369cb28257a4adf625f5bbcfd052799b777dc5e7551890716d9/https%3A//github.com/gorhill/uBlock/compare/1.8.4...1.8.5b0">https://github.com/gorhill/uBlock/compare/1.8.4...1.8.5b0</a>
+
+<h2>uBlock Origin 1.8.4 - August  7, 2016</h2>
+See <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/24186af94d2d28cabd4f4c22036614261dc118d34882b249fb8df19455c47f23/https%3A//github.com/gorhill/uBlock/releases/tag/1.8.4">release notes</a>.
+<br/>&nbsp;
+<br/><b>Fixed</b>
+<br/>&nbsp;
+<br/>- <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/d112c3019c882cb7a7ff78884324bd0d103c929f0f3af57af8ecedf09c72f2a7/https%3A//github.com/gorhill/uBlock/issues/1873">Unspecified element removed</a>: regression introduced in 1.8.0 when cosmetic filtering was refactored. Some classes of exception cosmetic filters were disregarded.
+<br/>&nbsp;
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/dfe848ea754115dacff841904263746a7583cce2e9409b83849ba70009a3e454/https%3A//github.com/gorhill/uBlock/compare/1.8.2...1.8.4">Commit history between 1.8.2 and 1.8.4</a>.
+
+<h2>uBlock Origin 1.8.3b2 - August  6, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/cecfe39efd66c4291d2b15aae233508ca16c6297e397975d5f0c9582cc6d8b3c/https%3A//github.com/gorhill/uBlock/releases/tag/1.8.3b2">https://github.com/gorhill/uBlock/releases/tag/1.8.3b2</a>
+<br/>Commit history since 1.8.2: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/8e6e423538dc953ff3a3ad5e62aa62dedf47d5c59343621bc873bd0e5b59174d/https%3A//github.com/gorhill/uBlock/compare/1.8.2...1.8.3b2">https://github.com/gorhill/uBlock/compare/1.8.2...1.8.3b2</a>
+
+<h2>uBlock Origin 1.8.3b1 - August  6, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/39f80e0be6b010f3611901e1d7f42574341d0fab8a52660d01797f21cbc05e27/https%3A//github.com/gorhill/uBlock/releases/tag/1.8.3b1">https://github.com/gorhill/uBlock/releases/tag/1.8.3b1</a>
+<br/>Commit history since 1.8.2: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/87b06c787c59acfc233a450fd8d5b97b13410b6e885b8d9f2dfcae44a6cd161d/https%3A//github.com/gorhill/uBlock/compare/1.8.2...1.8.3b1">https://github.com/gorhill/uBlock/compare/1.8.2...1.8.3b1</a>
+
+<h2>uBlock Origin 1.8.3b0 - August  6, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/098ae4287717c6c32333d5e17e1562864360941604b0853bac80bb5e5f5d7730/https%3A//github.com/gorhill/uBlock/releases/tag/1.8.3b0">https://github.com/gorhill/uBlock/releases/tag/1.8.3b0</a>
+<br/>Commit history since 1.8.2: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/979ecb468f92fecbb595c1194da08b82f0dbdd9c601b0195c95f54e52209cb3b/https%3A//github.com/gorhill/uBlock/compare/1.8.2...1.8.3b0">https://github.com/gorhill/uBlock/compare/1.8.2...1.8.3b0</a>
+
+<h2>uBlock Origin 1.8.2 - August  5, 2016</h2>
+See <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/704e146ccb89bff5fedf74e930eb8219cdd9220b58314ab7dc1cddf3b31beb8d/https%3A//github.com/gorhill/uBlock/releases/tag/1.8.2">release notes</a>.
+<br/>&nbsp;
+<br/><b>Fixed</b>
+<br/>&nbsp;
+<br/>A regression bug, which caused a non-catched exception to be thrown when creating a filter using the element picker. This bug was <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/f13257cf53bd65326bcca02565a89f0daf5a7075c14ad248b28a9b0bb1a5fe2a/https%3A//github.com/gorhill/uBlock/issues/1786">introduced in fix to issue 1786</a>.
+<br/>&nbsp;
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/5b0d352320d7ad14692c55b797a799d1cb442ca9474a9e604e60814a3a53b05d/https%3A//github.com/gorhill/uBlock/compare/1.8.0...1.8.2">Commit history between 1.8.0 and 1.8.2</a>.
+
+<h2>uBlock Origin 1.8.1b0 - August  3, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/a6f2a5d01755c47211b19d2d666c4c3b59875e0c1124f993c3af3b67de6bc559/https%3A//github.com/gorhill/uBlock/releases/tag/1.8.1b0">https://github.com/gorhill/uBlock/releases/tag/1.8.1b0</a>
+<br/>Commit history since 1.8.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/5bfea67464d2e1bb7723b52391467b098da6e0d90962f74926dfd3cb93285c2c/https%3A//github.com/gorhill/uBlock/compare/1.8.0...1.8.1b0">https://github.com/gorhill/uBlock/compare/1.8.0...1.8.1b0</a>
+
+<h2>uBlock Origin 1.8.0 - August  2, 2016</h2>
+<b>New</b>
+<br/>&nbsp;
+<br/>New cosmetic filtering operators: ':has()', ':xpath()', ':style()'. See detailed documentation at <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/3aaceb9b56b3c535b7f69aa9079c6088981adc527a4ecb22dd4a1c3b3c88c36e/https%3A//github.com/gorhill/uBlock/wiki/Static-filter-syntax"><i>"Static filter syntax"</i></a>.
+<br/>&nbsp;
+<br/>These new operators are to be used only for cosmetic filtering cases which are hard to crack -- more and more of these are surfacing (for example DOM elements with random class or id values).
+<br/>&nbsp;
+<br/>When it comes to cosmetic filtering, preferably, always favor a plain old CSS3-based cosmetic filter, since they can be used in a declarative way, inside a 'style' tag. But there are cases where no CSS3-based expression will work, and in such case consider these new ':has' and ':xpath' operators.
+<br/>&nbsp;
+<br/>Note that unlike ':has', ':xpath' is not a valid CSS4 expression, so they will always be enforced in a non-declarative way (in other word, javascript is doing the filtering, through <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/b5f98e52015e90142b865562bd75aa6c7bbeb0f62b710a14d508825c3ed8e9fa/https%3A//developer.mozilla.org/en/docs/Web/API/Document/evaluate">'document.evaluate'</a>.
+<br/>&nbsp;
+<br/>These new cosmetic filtering operators can be "excepted" like any other standard CSS3-based cosmetic filter using the usual '#@#' prompt. Such exception cosmetic filters do not have to be <i>specific</i> however, i.e. you do not have to associate them to a specific hostname/entity.
+<br/>&nbsp;
+<br/><b>Changes</b>
+<br/>&nbsp;
+<br/>The content script code responsible to implement cosmetic filtering has been re-factored:
+<br/>&nbsp;
+<br/><ul><li>To harden against sites which tries to work around uBO's cosmetic filtering.</li><li>To improve general performance and memory usage.</li><li>To support the new cosmetic filters.</li></ul>
+<br/><b>Closed as fixed</b>
+<br/>&nbsp;
+<br/><ul><li>[Firefox] uMatrix's fix to <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/00b166e232c21eddb6eb0fe32e8f7b319a807aa367ad5e3c6a60feb5f3865210/https%3A//github.com/gorhill/uMatrix/issues/540">issue #540</a> has been imported into uBO.</li><li>[SeaMonkey] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/544075d7f07ee545e8872970b641aaf53e87e47a2cad20278e173e7c49802520/https%3A//github.com/gorhill/uMatrix/issues/586">Toolbar icon gone in private browsing window</a>.</li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/d2b31fa229a77fa41243b4cf2a514b74654f43c9db179441a643f629bf449525/https%3A//forums.lanik.us/viewtopic.php%3Ff=64&amp;t=31522">"Can't properly upload attachments to any XenForo-based sites"</a>.</li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/f13257cf53bd65326bcca02565a89f0daf5a7075c14ad248b28a9b0bb1a5fe2a/https%3A//github.com/gorhill/uBlock/issues/1786">Own static filter not immediately available?!</a>.</li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/20ad5cbfec9ef219707de256f7f2fcbfb73708f8ea0bfa6c6d75bf32ecf29c9c/https%3A//github.com/gorhill/uBlock/issues/1779">Logger visual issue</a>.</li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/0df00ca5bd5d639bc4a543f53efad85ffe91a9f70f4e8f55fe3570a109d9bb8c/https%3A//github.com/gorhill/uBlock/issues/1765">Domain-anchored filters that can't be tokenized, are rejected</a>.</li><li>Fixed a static filtering issue <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/eba9001d293174d783e82c7b66dcd02a3c56ad94af87325845fec1a9f868b5b8/https%3A//forums.lanik.us/viewtopic.php%3Ff=23&amp;t=31223%23p97204">reported in EasyList forum</a>.</li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/bf52b0a7499fd52172f965e7f26694ed292316ad8f05b2692e8664a16e468136/https%3A//github.com/gorhill/uBlock/issues/1757">Separator '^' is being stripped off filters</a>.</li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/9243aadddc74b774122e57040bcc379fa8477377e748ddd0bc9e5ddaffe1c632/https%3A//github.com/gorhill/uBlock/issues/781">Support cosmetic filters with explicit style properties</a>.</li></ul>
+
+<h2>uBlock Origin 1.7.7rc0 - July 26, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/83fd5a85b0608896b1fa417e25552191684fd2aa56a3021257e16c39391705fd/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.7rc0">https://github.com/gorhill/uBlock/releases/tag/1.7.7rc0</a>
+<br/>Commit history since 1.7.6: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/6e09493702a4ac4396415d1053bb9b60399a479f7cb8de8cb59cd3e6a5082337/https%3A//github.com/gorhill/uBlock/compare/1.7.6...1.7.7rc0">https://github.com/gorhill/uBlock/compare/1.7.6...1.7.7rc0</a>
+
+<h2>uBlock Origin 1.7.7b15 - July 20, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/07b9c933b43a082a1670e8b26884d28505fe89f4ac0405c6bc7da6d5f519e4c9/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.7b15">https://github.com/gorhill/uBlock/releases/tag/1.7.7b15</a>
+<br/>Commit history since 1.7.6: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/5ea1afd58edb9f812c7ac4bbb399cfc19ef88f8513bc20825924c33e93d7ad3f/https%3A//github.com/gorhill/uBlock/compare/1.7.6...1.7.7b15">https://github.com/gorhill/uBlock/compare/1.7.6...1.7.7b15</a>
+
+<h2>uBlock Origin 1.7.7b14 - July 16, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/746475ca06a5e8d658131375ffbb67272dceb56b56eae87ce2df792bf1b21a91/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.7b14">https://github.com/gorhill/uBlock/releases/tag/1.7.7b14</a>
+<br/>Commit history since 1.7.6: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/775bf162c542912111a154cc7a783670e98d7b7b6d19121bfcdaf81048258646/https%3A//github.com/gorhill/uBlock/compare/1.7.6...1.7.7b14">https://github.com/gorhill/uBlock/compare/1.7.6...1.7.7b14</a>
+
+<h2>uBlock Origin 1.7.7b13 - July 15, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/4f0ca2a345fcf670b33f9f5d5daf45c7bcf19b64dae577e837fef9fe29b9ca90/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.7b13">https://github.com/gorhill/uBlock/releases/tag/1.7.7b13</a>
+<br/>Commit history since 1.7.6: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/f1c7dd38119099a40b87e746e32e25d0c059fa34035af10d30b7ac4d11616533/https%3A//github.com/gorhill/uBlock/compare/1.7.6...1.7.7b13">https://github.com/gorhill/uBlock/compare/1.7.6...1.7.7b13</a>
+
+<h2>uBlock Origin 1.7.7b12 - July 12, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/5fca48031a5361aa7d59fae1fbc0b5363146fa6068e44fcac7d159698d2cabe2/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.7b12">https://github.com/gorhill/uBlock/releases/tag/1.7.7b12</a>
+<br/>Commit history since 1.7.6: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/0b9dca3248908f9ef7ae8194055b9f2f2a4571c55bbe9f4849f2d4b36a53845a/https%3A//github.com/gorhill/uBlock/compare/1.7.6...1.7.7b12">https://github.com/gorhill/uBlock/compare/1.7.6...1.7.7b12</a>
+
+<h2>uBlock Origin 1.7.7b11 - July 10, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/eeb953b15303f50def18fad8ed5f73cc38985f61ff8e25feed214585c38fe922/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.7b11">https://github.com/gorhill/uBlock/releases/tag/1.7.7b11</a>
+<br/>Commit history since 1.7.6: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/c28939703f61dee61a95a074acdd905027ee9cb042bae6d86b9f50d501e24fb4/https%3A//github.com/gorhill/uBlock/compare/1.7.6...1.7.7b11">https://github.com/gorhill/uBlock/compare/1.7.6...1.7.7b11</a>
+
+<h2>uBlock Origin 1.7.7b10 - July  3, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/ac81d694fd7524eb74f624ec1f962b8e2918da4f5fc5b427225277f237191da0/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.7b10">https://github.com/gorhill/uBlock/releases/tag/1.7.7b10</a>
+<br/>Commit history since 1.7.6: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/65d1b6fd16201ce85b5bdf99473ac68c77cf848ab67559f171ae5c6db8125bda/https%3A//github.com/gorhill/uBlock/compare/1.7.6...1.7.7b10">https://github.com/gorhill/uBlock/compare/1.7.6...1.7.7b10</a>
+
+<h2>uBlock Origin 1.7.7b9 - July  2, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/9f928f4828de044e96b09a3d1e27262e619aae8ad13bf4fec518d917b6648e4e/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.7b9">https://github.com/gorhill/uBlock/releases/tag/1.7.7b9</a>
+<br/>&nbsp;
+<br/>Commit history since 1.7.6: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/6fd6ee32dea55198c1f6affb26a33740ce5d4322864a7c8d9e6c23018b3ec32c/https%3A//github.com/gorhill/uBlock/compare/1.7.6...1.7.7b9">https://github.com/gorhill/uBlock/compare/1.7.6...1.7.7b9</a>
+
+<h2>uBlock Origin 1.7.7b8 - July  1, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/4f85d6ba6ffcd5ea5b7ba8ef8852d2a987627ec37ad4742d59742159b44b89f5/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.7b8">https://github.com/gorhill/uBlock/releases/tag/1.7.7b8</a>
+<br/>&nbsp;
+<br/>Commit history since 1.7.6: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/6ef6405853d8b299e40c109dfcd154494971a1a03043097bf1010162cfc56b28/https%3A//github.com/gorhill/uBlock/compare/1.7.6...1.7.7b8">https://github.com/gorhill/uBlock/compare/1.7.6...1.7.7b8</a>
+
+<h2>uBlock Origin 1.7.7b7 - July  1, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/987e4833431b9981c9e916eb312f4ee682cc909dba057d45dc578b8d7b5cc8e3/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.7b7">https://github.com/gorhill/uBlock/releases/tag/1.7.7b7</a>
+<br/>&nbsp;
+<br/>Commit history since 1.7.6: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/300c157102fe8a5c235773321f2dc5d88824492d763045d62662277f44064864/https%3A//github.com/gorhill/uBlock/compare/1.7.6...1.7.7b7">https://github.com/gorhill/uBlock/compare/1.7.6...1.7.7b7</a>
+
+<h2>uBlock Origin 1.7.7b6 - June 30, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/ecba4232717c65ad70531cb1a9c8c5c977ec5af6b45ed5b6cad0b8746cfc5ebf/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.7b6">https://github.com/gorhill/uBlock/releases/tag/1.7.7b6</a>
+<br/>&nbsp;
+<br/>Commit history since 1.7.6: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/97ecec04c5d6101c11520122ed56490340d514ceee2d8b6bf4fd91c285d5669f/https%3A//github.com/gorhill/uBlock/compare/1.7.6...1.7.7b6">https://github.com/gorhill/uBlock/compare/1.7.6...1.7.7b6</a>
+
+<h2>uBlock Origin 1.7.7b5 - June 29, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/78ed73d392a2b78880684b8fd44cf49d4d1ba38e2c1e5b1e8275d5fd06a3e9e6/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.7b5">https://github.com/gorhill/uBlock/releases/tag/1.7.7b5</a>
+<br/>&nbsp;
+<br/>Commit history since 1.7.6: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/c7f8842e582f25cd1a78bd22e566e3b1738ab85e80f3f63176e4026575dc41e3/https%3A//github.com/gorhill/uBlock/compare/1.7.6...1.7.7b5">https://github.com/gorhill/uBlock/compare/1.7.6...1.7.7b5</a>
+
+<h2>uBlock Origin 1.7.7b4 - June 29, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/9ddb16c98a8b90052591f42818e525740086a822836abb2856e22d3591ee9160/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.7b4">https://github.com/gorhill/uBlock/releases/tag/1.7.7b4</a>
+<br/>&nbsp;
+<br/>Commit history since 1.7.6: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/6918788f2b7dbfd522d1938960d50afd258bd19b22a42d643b2e2a010fddb52b/https%3A//github.com/gorhill/uBlock/compare/1.7.6...1.7.7b4">https://github.com/gorhill/uBlock/compare/1.7.6...1.7.7b4</a>
+
+<h2>uBlock Origin 1.7.7b3 - June 29, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/71d10eb8b3d985578fd5a82ced1626dbfe533e681cf1a2ccf32a6f2f902cdd9b/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.7b3">https://github.com/gorhill/uBlock/releases/tag/1.7.7b3</a>
+<br/>&nbsp;
+<br/>Commit history since 1.7.6: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/ba98cdc6b9d9738a653323c311dacce4cd9443a832d8ccb36836e001339afc25/https%3A//github.com/gorhill/uBlock/compare/1.7.6...1.7.7b3">https://github.com/gorhill/uBlock/compare/1.7.6...1.7.7b3</a>
+
+<h2>uBlock Origin 1.7.7b2 - June 29, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/53d727467b3c757d858da779d99509918517f321d822d89f2ae0aab42df79d34/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.7b2">https://github.com/gorhill/uBlock/releases/tag/1.7.7b2</a>
+<br/>&nbsp;
+<br/>Commit history since 1.7.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/bf0da6dde7e061524a9cea747a8ddcd78618b3a28b1bccff97cc62917cc43c3f/https%3A//github.com/gorhill/uBlock/compare/1.7.6...1.7.7b2">https://github.com/gorhill/uBlock/compare/1.7.6...1.7.7b2</a>
+
+<h2>uBlock Origin 1.7.7b1 - June 29, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/8944f51fdaed4afa9cee4bb58066746504317195dc79d24284c732e6709771ed/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.7b1">https://github.com/gorhill/uBlock/releases/tag/1.7.7b1</a>
+<br/>&nbsp;
+<br/>Commit history since 1.7.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/6f6fba517e39949ca618dcb934baafd1e0013e7fbbad7eabb131d7a697e1a3ad/https%3A//github.com/gorhill/uBlock/compare/1.7.6...1.7.7b1">https://github.com/gorhill/uBlock/compare/1.7.6...1.7.7b1</a>
+
+<h2>uBlock Origin 1.7.7b0 - June 28, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/46537569ef32dfd6e08bfbfa94ce9cbad587296a18dccba63c0e9052977493a0/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.7b0">https://github.com/gorhill/uBlock/releases/tag/1.7.7b0</a>
+<br/>&nbsp;
+<br/>Commit history since 1.7.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/4055b1c6797f50763b65620ece6a84561a2f9a632dbfe0f55d56e3b44f54ea4c/https%3A//github.com/gorhill/uBlock/compare/1.7.6...1.7.7b0">https://github.com/gorhill/uBlock/compare/1.7.6...1.7.7b0</a>
+
+<h2>uBlock Origin 1.7.6 - June 22, 2016</h2>
+Summary of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/486d74e9400673adb9b7507e07e15bdda8605a9e6ae20e910371d4d7bc229876/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.6">changes</a>:
+<br/>&nbsp;
+<br/><b>Closed as fixed:</b>
+<br/>&nbsp;
+<br/><ul><li>[Firefox] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/89d10047deee9e860e7d8ac4f6eb0dd555149d9aae5a67085d2dccee3e11e37c/https%3A//github.com/gorhill/uBlock/issues/1716">Disable DNS prefetching when pre-fetching is disabled in settings</a></li><li>[Firefox] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/efb3be0fbd40d2761752dedf6400b6488f1ca4fb5dd19cbc8b75f4b16ae89e6d/https%3A//github.com/gorhill/uMatrix/issues/554">NoScript + uMatrix = cookie leak</a>
+<br/>    <ul>    <li>uBO was not suffering from the specific reported issue, but was theoretically suffering from the root cause at the source of incompatiblity between uMatrix and NoScript.
+<br/>    </li></ul></li><li>[Tor browser] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/d7288d720e0dd6138d91f7e82791143b4bd5f6f884771c3e282fb6977df5c74f/https%3A//trac.torproject.org/projects/tor/ticket/19438">Addons do not work randomly</a></li><li>[Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/2429d364b0acf2cefbd5ccfcb9e83547528e418dc751a57c059a8c3d79d4e42b/https%3A//github.com/gorhill/uBlock/issues/1725">Element picker: blocking `data:` URI-based resources does not work</a></li><li>[Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/c17e94b8ba8a813422c09fc1726bbe7b3c1c650ab317dfa0dcfc77b0cc60c726/https%3A//github.com/gorhill/uBlock/issues/1691">For certain rules logger does not show from which list(s) it originates</a></li><li>[Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/61758996b5b4ce8dbdd2b1128f988406e523765b48e068f84500fe0d2fc981fe/https%3A//github.com/gorhill/uBlock/issues/1662">Dynamic filtering problem</a></li><li>[Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/930d03e9e3f32e3db0dffdf3045db95073e4c450c6022cc2f9dc5bf23450bfa4/https%3A//github.com/gorhill/uBlock/issues/1660">Regex-based filters should not be case sensitive by default</a></li><li>[Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/7db909f69cebab341512b24f2c99444163434a9c8f39b5e3b54a1f628202bac2/https%3A//github.com/gorhill/uBlock/issues/1629">Preview "##iframe" in element picker, hides element picker</a></li><li>[Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/88428b848aa709a1bab597f825405c7105a1d9054c2f64de2f1a2fc1da8d4b11/https%3A//github.com/gorhill/uBlock/issues/1613%23issuecomment-217643661">Logger unduly discarding events in edge cases</a></li><li>[Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/f3c6707c841539094aee8371bf6095734753597bdd10a7c71047fb6d84cb3f3c/https%3A//github.com/gorhill/uBlock/issues/1607">Complex whitelist rules never catch on localhost</a></li></ul>
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/96deef089d53d52332f18f51cc444422d96dd37e3c12b297037dbbb0bae983dc/https%3A//github.com/gorhill/uBlock/compare/1.7.0...1.7.6">Commit history between 1.7.0 and 1.7.6</a>
+
+<h2>uBlock Origin 1.7.5rc7 - June 19, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/e70bc072ee22940e705551e0b68296cc984d4390f52addb22ad61b2844afdeb3/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.5rc7">https://github.com/gorhill/uBlock/releases/tag/1.7.5rc7</a>
+<br/>&nbsp;
+<br/>Commit history since 1.7.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/39aa51d9a69eec1cbaccae1fba977f37d4afea8f1d9c2e3bd8aff3c8dcc97506/https%3A//github.com/gorhill/uBlock/compare/1.7.0...1.7.5rc7">https://github.com/gorhill/uBlock/compare/1.7.0...1.7.5rc7</a>
+
+<h2>uBlock Origin 1.7.5rc6 - June 16, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/c6256a75f264e6d0ceae2c5c49845e1e5626026ebac83a4d48cd7127de5fea68/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.5rc6">https://github.com/gorhill/uBlock/releases/tag/1.7.5rc6</a>
+<br/>&nbsp;
+<br/>Commit history since 1.7.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/250048a4d215d732310939db08a02f9bfa2249efbfb89a3705f14bd1d9a2ca21/https%3A//github.com/gorhill/uBlock/compare/1.7.0...1.7.5rc6">https://github.com/gorhill/uBlock/compare/1.7.0...1.7.5rc6</a>
+
+<h2>uBlock Origin 1.7.5rc5 - June 16, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/ce26118a9e62fe9397b8fbfc8ec2e92c46322fc2992c942534afe3e8952f9d3b/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.5rc5">https://github.com/gorhill/uBlock/releases/tag/1.7.5rc5</a>
+<br/>&nbsp;
+<br/>Commit history since 1.7.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/56a5c152322ff6b748735efe4482c0ff3b5b0096ff4f417faaf6f4e5d3e5e2ff/https%3A//github.com/gorhill/uBlock/compare/1.7.0...1.7.5rc5">https://github.com/gorhill/uBlock/compare/1.7.0...1.7.5rc5</a>
+
+<h2>uBlock Origin 1.7.5rc4 - June 12, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/c2f02b4cd88a794604b5fee992f312f370912e222ad9bae01c6c09a96df126fe/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.5rc4">https://github.com/gorhill/uBlock/releases/tag/1.7.5rc4</a>
+<br/>&nbsp;
+<br/>Commit history since 1.7.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/e17f24ae78de1460b721abed08d4b775becd77def8e7a4d33341b9a65ea29020/https%3A//github.com/gorhill/uBlock/compare/1.7.0...1.7.5rc4">https://github.com/gorhill/uBlock/compare/1.7.0...1.7.5rc4</a>
+
+<h2>uBlock Origin 1.7.5rc3 - June 10, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/b6b3deaf23bcced0efacfc98ba9466bd238cc33529b1cc31c69161bfed7d9289/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.5rc3">https://github.com/gorhill/uBlock/releases/tag/1.7.5rc3</a>
+<br/>&nbsp;
+<br/>Commit history since 1.7.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/38347f28ee1a156a8466a2f80453f72991c7c04be3635434530f607bc42ed02f/https%3A//github.com/gorhill/uBlock/compare/1.7.0...1.7.5rc3">https://github.com/gorhill/uBlock/compare/1.7.0...1.7.5rc3</a>
+
+<h2>uBlock Origin 1.7.5rc2 - June  6, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/3462287ee53231dc3a23f0f2dba04d5c007b2998e50b7345b99dee009dae609b/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.5rc2">https://github.com/gorhill/uBlock/releases/tag/1.7.5rc2</a>
+<br/>&nbsp;
+<br/>Commit history since 1.7.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/e6a734ac2e190c36c009635fd8d3dba593085909f9a8c4c329ab61a89a405804/https%3A//github.com/gorhill/uBlock/compare/1.7.0...1.7.5rc2">https://github.com/gorhill/uBlock/compare/1.7.0...1.7.5rc2</a>
+
+<h2>uBlock Origin 1.7.5rc1 - June  3, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/f8a4ee70b87c23e67cf647a6b91e9f5891c81d41c1d59521e38f0432b39d42a5/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.5rc1">https://github.com/gorhill/uBlock/releases/tag/1.7.5rc1</a>
+<br/>&nbsp;
+<br/>Commit history since 1.7.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/ac063683d3286b8488dcf377ff25c5f28561dc363ca90cbc572d9a9624e6fb59/https%3A//github.com/gorhill/uBlock/compare/1.7.0...1.7.5rc1">https://github.com/gorhill/uBlock/compare/1.7.0...1.7.5rc1</a>
+
+<h2>uBlock Origin 1.7.5rc0 - May 28, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/e7f9c34eece7cecdc4ff951d7ce0547e0b19a5219b3b62997aa8f19082590959/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.5rc0">https://github.com/gorhill/uBlock/releases/tag/1.7.5rc0</a>
+<br/>&nbsp;
+<br/>Commit history since 1.7.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/1d096be6094263840ed24e8edb544b976c92100576429ba76009740449ec9646/https%3A//github.com/gorhill/uBlock/compare/1.7.0...1.7.5rc0">https://github.com/gorhill/uBlock/compare/1.7.0...1.7.5rc0</a>
+
+<h2>uBlock Origin 1.7.5b2 - May 15, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/fb3237636b8a6004010a8a2b2cf03d1ad80e5c38536d3d68ea80a3b5fcbc0651/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.5b2">https://github.com/gorhill/uBlock/releases/tag/1.7.5b2</a>
+<br/>&nbsp;
+<br/>Commit history since 1.7.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/5ae4ecf2bf4d95c428a2afcd198cde37455d57cc48055d1bbb5c162c493e4bc7/https%3A//github.com/gorhill/uBlock/compare/1.7.0...1.7.5b2">https://github.com/gorhill/uBlock/compare/1.7.0...1.7.5b2</a>
+
+<h2>uBlock Origin 1.7.5b1 - May  7, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/33c4a3509de6b01f766ab1d5c7f479a807394aa7028a3decd73aee5f07f57a4b/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.5b1">https://github.com/gorhill/uBlock/releases/tag/1.7.5b1</a>
+<br/>&nbsp;
+<br/>Commit history since 1.7.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/d851a273f8c67cfd3b5dea67c77486f5e3e45d501f748019f9d4b2193c59816a/https%3A//github.com/gorhill/uBlock/compare/1.7.0...1.7.5b1">https://github.com/gorhill/uBlock/compare/1.7.0...1.7.5b1</a>
+
+<h2>uBlock Origin 1.7.5b0 - May  3, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/0cc414e22a2e86ed34fe7e68dd38dd4fd856790f8854d15a8b8062099fe3c449/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.5b0">https://github.com/gorhill/uBlock/releases/tag/1.7.5b0</a>
+<br/>&nbsp;
+<br/>Commit history since 1.7.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/908d6ce0cc556571178c389701d50fa63497faf37ac852e438e2e5db7af22f95/https%3A//github.com/gorhill/uBlock/compare/1.7.0...1.7.5b0">https://github.com/gorhill/uBlock/compare/1.7.0...1.7.5b0</a>
+
+<h2>uBlock Origin 1.7.0 - May  1, 2016</h2>
+Summary of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/4f2eb8e03556562709016fd8cba7f2c13d3b68fe5e00856a0b16a204f8c802ac/https%3A//github.com/gorhill/uBlock/releases/tag/1.7.0">changes</a>:
+<br/>&nbsp;
+<br/><b>Changes:</b>
+<br/>&nbsp;
+<br/>The element picker has been beefed-up:
+<br/><ul><li>It will now offer as filter choice background images, if any. (<a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/ec0816691e46472cd660a4a5d66ebc219026160a94054c3b68c489b5d593d05e/https%3A//github.com/gorhill/uBlock/issues/1202">#1202</a>)</li><li>When you click on an element on the page, it will report all elements found under the mouse. (Previously, the picker would report filters only for the element clicked and its ancestors.)</li><li>Filters for media elements will now be offered, if any. (<a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/38ab9bb8f9660a46bdf4d97155d1ae3e1217e940f70fa3395412e459797b2db4/https%3A//github.com/gorhill/uBlock/issues/1545">#1545</a>)</li><li>You can now preview the effect of the selected filter on the page. (<a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/4dd398af7f561ceaace43b944976666b366a2c1d5ce42238867d02ad59abb31f/https%3A//github.com/gorhill/uBlock/issues/650">#650</a>)</li></ul>
+<br/><b>Closed as fixed:</b>
+<br/>&nbsp;
+<br/><ul><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/8034b46823685c2c5c53f7ddf40fab0990890a3618d4ab4c691e80bab4218599/https%3A//github.com/gorhill/uBlock/issues/1598">Preferring document over popup filters</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/4f569397ebc40ba09e30146ea67b80d31691b41530be43c6e6c92e372815d26b/https%3A//github.com/gorhill/uBlock/issues/1597">Redirection fails for filters having ":" in the host part</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/29eebfbecb2e6a75a7ec479ed1a243ebb7e1b8d56a7e3ec7754a8ec071009d98/https%3A//github.com/gorhill/uBlock/issues/1573">uBO can cause FF 45 "Exit" to not terminate correctly</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/38ab9bb8f9660a46bdf4d97155d1ae3e1217e940f70fa3395412e459797b2db4/https%3A//github.com/gorhill/uBlock/issues/1545">Element picker does not offer a filter to block the clicked video element</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/8ee54dbc56643de4ff7b06c954121071f65b4dbde053145b48c9cb2e8cfec887/https%3A//github.com/gorhill/uBlock/issues/1538">A "no-popups: * true" rule will block new tabs opened from "chrome://extensions/"</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/ec0816691e46472cd660a4a5d66ebc219026160a94054c3b68c489b5d593d05e/https%3A//github.com/gorhill/uBlock/issues/1202">[Request] Block Background Ads</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/4dd398af7f561ceaace43b944976666b366a2c1d5ce42238867d02ad59abb31f/https%3A//github.com/gorhill/uBlock/issues/650">[Suggestion] Preview element picker filters</a></li></ul>
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/fad651190be7ba36f264943e30a3780cecaac86992d260e31ef0556bc75aea60/https%3A//github.com/gorhill/uBlock/compare/1.6.8...1.7.0">Commit history between 1.6.8 and 1.7.0</a>
+
+<h2>uBlock Origin 1.6.9rc1 - April 26, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/e7af0b09e7600e4f13d4eeca9a1f74822e2a444124b3f9f3f32fbb7d3ca47e7e/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.9rc1">https://github.com/gorhill/uBlock/releases/tag/1.6.9rc1</a>
+<br/>&nbsp;
+<br/>Commit history since 1.6.8: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/520ab9b4ed80914770dad3ba07f7ac46ba08f6cd7b9e4deab565328a4572aae0/https%3A//github.com/gorhill/uBlock/compare/1.6.8...1.6.9rc1">https://github.com/gorhill/uBlock/compare/1.6.8...1.6.9rc1</a>
+
+<h2>uBlock Origin 1.6.9b4 - April 21, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/546d9334b4d878c9e6a2024fd1f3fdad99760b7149a0ba9deabb73728df56888/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.9b4">https://github.com/gorhill/uBlock/releases/tag/1.6.9b4</a>
+<br/>&nbsp;
+<br/>Commit history since 1.6.8: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/1559e93318408a0ae7425508789b46c08d1c5a9a8900ebeafdd9356504087d96/https%3A//github.com/gorhill/uBlock/compare/1.6.8...1.6.9b4">https://github.com/gorhill/uBlock/compare/1.6.8...1.6.9b4</a>
+
+<h2>uBlock Origin 1.6.9rc0 - April 20, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/4e7ccf1598ba0c829243217a3540d396813be49ae108f93d07241000176a8f6e/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.9rc0">https://github.com/gorhill/uBlock/releases/tag/1.6.9rc0</a>
+<br/>&nbsp;
+<br/>Commit history since 1.6.8: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/caac54955dd79c88eef7f1f4f6f4198e2caf5898241efb51d90a0047aca5ac59/https%3A//github.com/gorhill/uBlock/compare/1.6.8...1.6.9rc0">https://github.com/gorhill/uBlock/compare/1.6.8...1.6.9rc0</a>
+
+<h2>uBlock Origin 1.6.9b2 - April 18, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/8353f861ab6b3367def66cb6b2021b71cb1af4b53bbb78cde88163be6353ae7a/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.9b2">https://github.com/gorhill/uBlock/releases/tag/1.6.9b2</a>
+<br/>&nbsp;
+<br/>Commit history since 1.6.8: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/c14ca08bf7d4f1c7eaa9d930235f640250f5b524c2130988d30af60113c64448/https%3A//github.com/gorhill/uBlock/compare/1.6.8...1.6.9b2">https://github.com/gorhill/uBlock/compare/1.6.8...1.6.9b2</a>
+
+<h2>uBlock Origin 1.6.9b1 - April 16, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/9efa6072f01ffdc042372568b25c410166d3eff0a408c1ec705faa193cad01ab/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.9b1">https://github.com/gorhill/uBlock/releases/tag/1.6.9b1</a>
+<br/>&nbsp;
+<br/>Commit history since 1.6.8: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/17b45a504bc4738d6302b19a1b5ccb9bd08145104d2dd4e9c6b9f0d3c4d118e1/https%3A//github.com/gorhill/uBlock/compare/1.6.8...1.6.9b1">https://github.com/gorhill/uBlock/compare/1.6.8...1.6.9b1</a>
+
+<h2>uBlock Origin 1.6.9b0 - April  7, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/098bc43d54ccffa9d1eab9ca0fdaba8e603ca44067ee774f8abd14efc09320ed/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.9b0">https://github.com/gorhill/uBlock/releases/tag/1.6.9b0</a>
+<br/>&nbsp;
+<br/>Commit history since 1.6.8: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/994f05a7fdfeae02b6a191ba0f474d0e9f8d0891ef4fff81bac5ae7344aba26d/https%3A//github.com/gorhill/uBlock/compare/1.6.8...1.6.9b0">https://github.com/gorhill/uBlock/compare/1.6.8...1.6.9b0</a>
+
+<h2>uBlock Origin 1.6.8 - April  5, 2016</h2>
+Summary of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/25863ecbadf128e39060692004caffa5f00e80efae3b53efc4f8a5754c691394/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.8">changes</a>:
+<br/>&nbsp;
+<br/><b>Changes:</b>
+<br/>&nbsp;
+<br/>From now on, uBlock Origin will pull assets (filter lists, scriptlets) from a project dedicated strictly for the purpose of maintaining those resources: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/3d22d958a8bec9042d88dc1805c36e205ec65894a40dd89d9de011f7dd56d956/https%3A//github.com/uBlockOrigin/uAssets">uBlockOrigin/uAssets</a>. Notice that this project is owned by <i>uBlockOrigin</i>, an organization I created to maintain all things related to uBlock Origin, uMatrix. For now uAssets is the first project to be held under that organization.
+<br/>&nbsp;
+<br/>The goal of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/3d22d958a8bec9042d88dc1805c36e205ec65894a40dd89d9de011f7dd56d956/https%3A//github.com/uBlockOrigin/uAssets">uBlockOrigin/uAssets</a> is to receive all the reports for the need of new filters, or reports of web pages broken by existing filters, and will be open for people to contribute (i.e. given write permissions on the project). Ideally I wish there will be eventually a small army of volunteers dedicated to deal with filter issues.
+<br/>&nbsp;
+<br/><b>Closed as fixed:</b>
+<br/>&nbsp;
+<br/><ul><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/344484abe12d6fdda2ef0a31633418015466871cd312952e6968a9078c6ca5f3/https%3A//github.com/gorhill/uBlock/issues/1514">uBlock Origin ignores changed tld</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/6bb77411ed88e52de0feac9459da3c49f13be78aea6ff29e6d95fea4f844220a/https%3A//github.com/gorhill/uBlock/issues/1529">I can't filter this elements</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/1a62d027beb845ebd45629409e0524f1179b435b69fcb952be7e5d563dd51488/https%3A//github.com/gorhill/uBlock/issues/1511">Too long URLs in dropdown selector causes desktop glitch</a></li></ul>
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/84ed202c9d7e9eb5c16843e45125b304eea7b05f97ae963d3ced5ed62611da42/https%3A//github.com/gorhill/uBlock/compare/1.6.6...1.6.8">Commit history between 1.6.6 and 1.6.8</a>
+
+<h2>uBlock Origin 1.6.7rc2 - April  3, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/28cbff70ec0f85e07947245d978f38255b3aca358fe8af46887b478a77a68bc9/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.7rc2">https://github.com/gorhill/uBlock/releases/tag/1.6.7rc2</a>
+<br/>&nbsp;
+<br/>Commit history since 1.6.6: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/2b79797bcd1def29f09d35c37ee604f04bcd79a90b203397520c315d52634b93/https%3A//github.com/gorhill/uBlock/compare/1.6.6...1.6.7rc2">https://github.com/gorhill/uBlock/compare/1.6.6...1.6.7rc2</a>
+
+<h2>uBlock Origin 1.6.7rc1 - April  3, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/aef12fb9f93f7273319b9660d5ec7be233eb3a3a081e03225cef8808c3ab7cf7/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.7rc1">https://github.com/gorhill/uBlock/releases/tag/1.6.7rc1</a>
+<br/>&nbsp;
+<br/>Commit history since 1.6.6: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/790a7996cf1163d61e96194d8ce8168d2162188ba6bccc58c1a9cb5115ed77e9/https%3A//github.com/gorhill/uBlock/compare/1.6.6...1.6.7rc1">https://github.com/gorhill/uBlock/compare/1.6.6...1.6.7rc1</a>
+
+<h2>uBlock Origin 1.6.7rc0 - April  2, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/fd0b8bb1cc0ef877e907139d88005c1976fa1355ed9355a1fb41990f3b9d74be/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.7rc0">https://github.com/gorhill/uBlock/releases/tag/1.6.7rc0</a>
+<br/>&nbsp;
+<br/>Commit history since 1.6.6: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/69af3b1f0ff989626387e2f4bd42704bea380c3b904084314d059df168f35f45/https%3A//github.com/gorhill/uBlock/compare/1.6.6...1.6.7rc0">https://github.com/gorhill/uBlock/compare/1.6.6...1.6.7rc0</a>
+
+<h2>uBlock Origin 1.6.7b0 - March 29, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/013878933285ce56210380d0d3ab8eb75e0958edbf665d2210a302eee3d69e34/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.6">https://github.com/gorhill/uBlock/releases/tag/1.6.6</a>
+<br/>&nbsp;
+<br/>Commit history since 1.6.6: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/88eb1d9cf6d214839f055abed9f264efd34247553bdad4dc4a61302ee3f119d9/https%3A//github.com/gorhill/uBlock/compare/1.6.6...1.6.7b0">https://github.com/gorhill/uBlock/compare/1.6.6...1.6.7b0</a>
+
+<h2>uBlock Origin 1.6.6 - March 26, 2016</h2>
+Summary of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/013878933285ce56210380d0d3ab8eb75e0958edbf665d2210a302eee3d69e34/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.6">changes</a>:
+<br/>&nbsp;
+<br/><b>Closed as fixed:</b>
+<br/>&nbsp;
+<br/><b>Firefox:</b>
+<br/>&nbsp;
+<br/><ul><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/77d54a7ef19f10778a63173f06b8f6d84caba541d90286f8bbc9f2fc26e2b576/https%3A//github.com/gorhill/uBlock/issues/1459">Showing incorrect context for github websockets</a></li></ul>
+<br/><b>Core:</b>
+<br/>&nbsp;
+<br/><ul><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/0cc2ee53bb5fface22295cc764f0e754eb12560a90195fe9993acbc3c4e97fc8/https%3A//github.com/gorhill/uBlock/issues/1484">uBO doesn't count discarded cosmetic filters with 'Parse and enforce cosmetic filters' disabled</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/ee27d6716fd6bedc991bdb0c720aca2834a661ad0621ac21f94411a113d42be8/https%3A//github.com/gorhill/uBlock/issues/1477">Misinterpreting filters with elemhide</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/1e86e2cae118ab4e1bc0f37a82783819f49b6e4d5a1f2fc226fccb3f2cc84469/https%3A//github.com/gorhill/uBlock/issues/1471">Closing legit tabs as popunders</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/21fa0728980600cb988bfba5bc5799ae9fcd230c91065c0ad38ead3b62ff11df/https%3A//github.com/gorhill/uBlock/issues/1468">HOSTS file filtering also blocking domains with a different ccTLD</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/61016716012924e309f661a9ccc6002995e076775554f35fa1a3d7c4ba3210fc/https%3A//github.com/gorhill/uBlock/issues/370">In logger, exceptions rules with "elemhide" are "red"</a></li></ul>
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/9b8677c4496f48f5ab5c899da8cf6a90f467104bbe729ad6f41d27e22dc555d0/https%3A//github.com/gorhill/uBlock/compare/1.6.4...1.6.6">Commit history between 1.6.4 and 1.6.6</a>
+
+<h2>uBlock Origin 1.6.5rc4 - March 22, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/c92b1d7df64d6bb8246f8822290ef7b56603eadf96f40f5f0bd51a690608f0f4/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.4">https://github.com/gorhill/uBlock/releases/tag/1.6.4</a>
+<br/>&nbsp;
+<br/>Commit history since 1.6.4: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/2753f8188f34aaa418d3a5d0fc9caee4fcde8a5e9508ad7a309519f4ff4d9d1c/https%3A//github.com/gorhill/uBlock/compare/1.6.4...1.6.5rc4">https://github.com/gorhill/uBlock/compare/1.6.4...1.6.5rc4</a>
+
+<h2>uBlock Origin 1.6.5rc3 - March 17, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/c92b1d7df64d6bb8246f8822290ef7b56603eadf96f40f5f0bd51a690608f0f4/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.4">https://github.com/gorhill/uBlock/releases/tag/1.6.4</a>
+<br/>&nbsp;
+<br/>Commit history since 1.6.4: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/d213f89637cebe90ed220431fce56c877f0bec8ca60e0e28fc62a40c522f99be/https%3A//github.com/gorhill/uBlock/compare/1.6.4...1.6.5rc3">https://github.com/gorhill/uBlock/compare/1.6.4...1.6.5rc3</a>
+
+<h2>uBlock Origin 1.6.5rc2 - March 16, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/c92b1d7df64d6bb8246f8822290ef7b56603eadf96f40f5f0bd51a690608f0f4/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.4">https://github.com/gorhill/uBlock/releases/tag/1.6.4</a>
+<br/>&nbsp;
+<br/>Commit history since 1.6.4: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/4360cdbd34dedcd938c7c6d5369a02bb7f37ee42c3ee2bb2a84d2930da8789d1/https%3A//github.com/gorhill/uBlock/compare/1.6.4...1.6.5rc2">https://github.com/gorhill/uBlock/compare/1.6.4...1.6.5rc2</a>
+
+<h2>uBlock Origin 1.6.5rc1 - March 15, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/c92b1d7df64d6bb8246f8822290ef7b56603eadf96f40f5f0bd51a690608f0f4/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.4">https://github.com/gorhill/uBlock/releases/tag/1.6.4</a>
+<br/>&nbsp;
+<br/>Commit history since 1.6.4: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/c31dbd303fbfd48f0c1b1620b35cf87acb0de5a8b094be7a8de9dafb434eece2/https%3A//github.com/gorhill/uBlock/compare/1.6.4...1.6.5rc1">https://github.com/gorhill/uBlock/compare/1.6.4...1.6.5rc1</a>
+
+<h2>uBlock Origin 1.6.5rc0 - March 12, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/c92b1d7df64d6bb8246f8822290ef7b56603eadf96f40f5f0bd51a690608f0f4/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.4">https://github.com/gorhill/uBlock/releases/tag/1.6.4</a>
+<br/>&nbsp;
+<br/>Commit history since 1.6.4: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/cc5d2dbc0dcbe364007a30b9fd77dc6bea4d30f555044ec1c8a208b5a3ca252b/https%3A//github.com/gorhill/uBlock/compare/1.6.4...1.6.5rc0">https://github.com/gorhill/uBlock/compare/1.6.4...1.6.5rc0</a>
+
+<h2>uBlock Origin 1.6.5b2 - March 12, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/c92b1d7df64d6bb8246f8822290ef7b56603eadf96f40f5f0bd51a690608f0f4/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.4">https://github.com/gorhill/uBlock/releases/tag/1.6.4</a>
+<br/>&nbsp;
+<br/>Commit history since 1.6.4: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/9a8df5f0137c92135e5671fd57f14ef4ae5e1aeb06b73dc0adb0a7d6393c9acf/https%3A//github.com/gorhill/uBlock/compare/1.6.4...1.6.5b2">https://github.com/gorhill/uBlock/compare/1.6.4...1.6.5b2</a>
+
+<h2>uBlock Origin 1.6.5b1 - March 10, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/c92b1d7df64d6bb8246f8822290ef7b56603eadf96f40f5f0bd51a690608f0f4/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.4">https://github.com/gorhill/uBlock/releases/tag/1.6.4</a>
+<br/>&nbsp;
+<br/>Commit history since 1.6.4: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/0236237e2c9fee418bb1686c1d458342d0c709f8e1d193969539677d621abe2a/https%3A//github.com/gorhill/uBlock/compare/1.6.4...1.6.5b1">https://github.com/gorhill/uBlock/compare/1.6.4...1.6.5b1</a>
+
+<h2>uBlock Origin 1.6.5b0 - March  9, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/c92b1d7df64d6bb8246f8822290ef7b56603eadf96f40f5f0bd51a690608f0f4/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.4">https://github.com/gorhill/uBlock/releases/tag/1.6.4</a>
+<br/>&nbsp;
+<br/>Commit history since 1.6.4: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/fe2a7271e4950eabf30cd2d255077c320e883906b9eb1857bc2d88b8b23267bb/https%3A//github.com/gorhill/uBlock/compare/1.6.4...1.6.5b0">https://github.com/gorhill/uBlock/compare/1.6.4...1.6.5b0</a>
+
+<h2>uBlock Origin 1.6.4 - March  6, 2016</h2>
+Summary of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/c92b1d7df64d6bb8246f8822290ef7b56603eadf96f40f5f0bd51a690608f0f4/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.4">changes</a>:
+<br/>&nbsp;
+<br/><b>Changes:</b>
+<br/>&nbsp;
+<br/>Changes:
+<br/>&nbsp;
+<br/>Popup filters can also be used to filter popunders. This was the case in the original implementation of popunder filtering, however this was removed eventually as this was causing too many false positives for popunders, causing legitimate tabs to be closed (<a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/6fb67389a30fb28c4917bc390044dc0bed01affdf16f0174ac024f6cad3a95ce/https%3A//github.com/gorhill/uBlock/issues/1010">issue 1010</a>). The new solution is to still filter popunders according to existing popup filters, but to disregard popup filters which are too broad. Cases for which a popunder cannot be taken care by an existing popup filter, an explicit <code>popunder</code> filter should be used.
+<br/>&nbsp;
+<br/><b>Closed as fixed:</b>
+<br/>&nbsp;
+<br/><b>Firefox 31 and less, Pale Moon:</b>
+<br/><ul><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/967664a9934ca5a2b44eeb8026ad9839296897b4b347b8b58f3b77084585940a/https%3A//github.com/gorhill/uBlock/issues/1448">A minor bug with the "Block media elements" function</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/8e679b1193a6b3fb10775b2a915cb430039ddbbf77a8044b0478109918041caa/https%3A//github.com/gorhill/uBlock/issues/1444">UO (when used with uMatrix) displays old connected domains</a></li></ul>
+<br/><b>Core:</b>
+<br/><ul><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/8631736d69a29a2306c8d2fdd34b247ef59f69d0aa7cd3facbf0a62620195b5d/https%3A//github.com/gorhill/uBlock/issues/1403">Empty domain line (cell) - how can this be?</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/d28a9a3d4a1aefa8f21f2db8d3c981f2e4497a01201dec09d912db2dd4257a1d/https%3A//github.com/gorhill/uBlock/issues/1339">Logger doesn't show not blocked popups</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/6fb67389a30fb28c4917bc390044dc0bed01affdf16f0174ac024f6cad3a95ce/https%3A//github.com/gorhill/uBlock/issues/1010">dev version has problems when opening _blank target links</a> (issue was re-opened, and a new fix created).</li></ul>
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/d2a583cc4969b63cc9aee94b405e9f832d6bbda311302babeb28853f4a46b0da/https%3A//github.com/gorhill/uBlock/compare/1.6.2...1.6.4">Commit history between 1.6.2 and 1.6.4</a>
+
+<h2>uBlock Origin 1.6.4rc2 - March  5, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/39b21440220ae5e32ea3c665e2233c06a02e6397484dd7712528a302038c708b/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.4rc2">https://github.com/gorhill/uBlock/releases/tag/1.6.4rc2</a>
+<br/>&nbsp;
+<br/>Commit history since 1.6.2: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/f568ffa73f1f24a667b7c3bfb44ef5e3324c077f5f8bd5da1b6d4cecb2a0eeb9/https%3A//github.com/gorhill/uBlock/compare/1.6.2...1.6.4rc2">https://github.com/gorhill/uBlock/compare/1.6.2...1.6.4rc2</a>
+
+<h2>uBlock Origin 1.6.4rc1 - March  5, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/cf4d50d6eaae4b4b521a35993fd033259a75229d999a035bf163100499f6fdbb/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.4rc1">https://github.com/gorhill/uBlock/releases/tag/1.6.4rc1</a>
+<br/>&nbsp;
+<br/>Commit history since 1.6.2: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/9d0d5da1ee21f8ab0ac49b0e985f40589ecfa0a71cdfab63eecdb2653c8aabd1/https%3A//github.com/gorhill/uBlock/compare/1.6.2...1.6.4rc1">https://github.com/gorhill/uBlock/compare/1.6.2...1.6.4rc1</a>
+
+<h2>uBlock Origin 1.6.4b1 - February 27, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/741a207bdf7af601f7fbd3758e3bd6cb6b98aa0f4954ec7d6dfe4a60cea6a619/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.4b1">https://github.com/gorhill/uBlock/releases/tag/1.6.4b1</a>
+<br/>&nbsp;
+<br/>Commit history since 1.6.2: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/401eebaf930e022e5bbc3610474e8046271b806cc5e0e5e9671d6a814c744d9d/https%3A//github.com/gorhill/uBlock/compare/1.6.2...1.6.4b1">https://github.com/gorhill/uBlock/compare/1.6.2...1.6.4b1</a>
+
+<h2>uBlock Origin 1.6.4b0 - February 26, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/2810fcced78af85be25d3a18e51243c5e2e69a54b8cb3e9bf4c5ecfb95b5630e/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.4b0">https://github.com/gorhill/uBlock/releases/tag/1.6.4b0</a>
+<br/>&nbsp;
+<br/>Commit history since 1.6.2: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/7b0f7ab855dad7e12d755991129624bab76bea395287479d73d4b05938be3d9b/https%3A//github.com/gorhill/uBlock/compare/1.6.2...1.6.4b0">https://github.com/gorhill/uBlock/compare/1.6.2...1.6.4b0</a>
+
+<h2>uBlock Origin 1.6.2 - February 22, 2016</h2>
+Summary of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/56933389aa7cd690ac98761fd3238a3515580647f8f3df185b8a0ff9e27ab984/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.2">changes</a>:
+<br/>&nbsp;
+<br/><b>Closed as fixed:</b>
+<br/>&nbsp;
+<br/><b>Core:</b>
+<br/><ul><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/acf9a0bc2efc7817f225b0584378b9759ab8cec1417c88ca1db50c95e655297b/https%3A//github.com/gorhill/uBlock/issues/1395">uBlock is not able to apply ONLY my cosmetic filters</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/328e73f039652804b2e5b2745f1a113d7723dff59a38c2f6e05709fb2c64efa5/https%3A//github.com/gorhill/uBlock/issues/1392">Logger displays wrong source for some filters</a></li></ul>
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/0062a7ef4cdf5febd8529ce16215d6c5bbe06c1c618c276c248f86ca42af155f/https%3A//github.com/gorhill/uBlock/compare/1.6.1...1.6.2">Commit history between 1.6.1 and 1.6.2</a>
+
+<h2>uBlock Origin 1.6.2b0 - February 17, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/3c1955f61fda5934eb14e875ddc266557745fac971e1ad5b2df6d417656f2092/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.2b0">https://github.com/gorhill/uBlock/releases/tag/1.6.2b0</a>
+<br/>&nbsp;
+<br/>Commit history since 1.6.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/06f532e729118fa4bcdefbbfb19396c404a26c36c02f613e7fcfcd8d28a80621/https%3A//github.com/gorhill/uBlock/compare/1.6.1...1.6.2b0">https://github.com/gorhill/uBlock/compare/1.6.1...1.6.2b0</a>
+
+<h2>uBlock Origin 1.6.1 - February 14, 2016</h2>
+Summary of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/df2bb4790e3c1febd3a14235a76d3ffb0aff9662218aaf52bfbed7ea37b8a83f/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.1">changes</a>:
+<br/>&nbsp;
+<br/><b>Closed as fixed:</b>
+<br/>&nbsp;
+<br/><b>Core:</b>
+<br/><ul><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/5fa97c674e01105af084bf7ebbd16f5fbc200631077374feb88fb5b8ecbee1f1/https%3A//github.com/gorhill/uBlock/issues/1378">Popups with "no popups" switch enabled on uploadrocket</a></li></ul>
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/538c105cc9afa38e379ad98f1c99d03d844f7b9cd9dc60ec880051a87610f8ff/https%3A//github.com/gorhill/uBlock/compare/1.6.0...1.6.1">Commit history between 1.6.0 and 1.6.1</a>
+
+<h2>uBlock Origin 1.6.1rc0 - February 14, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/c8427f071a7a642cf750ee2e56f971de930ca49d387289c422557db35008a5f5/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.1rc0">https://github.com/gorhill/uBlock/releases/tag/1.6.1rc0</a>
+<br/>&nbsp;
+<br/>Commit history since 1.6.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/ae1bef3a227553fcd4fcb913450be45acbf81ebc95a1efdb22b960f24a684168/https%3A//github.com/gorhill/uBlock/compare/1.6.0...1.6.1rc0">https://github.com/gorhill/uBlock/compare/1.6.0...1.6.1rc0</a>
+
+<h2>uBlock Origin 1.6.0 - February 11, 2016</h2>
+Summary of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/58cf870c41b777014e6c1bb5c72eadfe1aad07e98d1bc1fd7b0f6c4a7b006645/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.0">changes</a>:
+<br/>&nbsp;
+<br/><b>New:</b>
+<br/>&nbsp;
+<br/><b>Ability to set the default state of per-site switches (issue #1193)</b>
+<br/>&nbsp;
+<br/>It is now possible to set the default value of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/d99754a2c1229381cc906a6e1c9b300db8e892488d2fef973f4ccc00294812ab/https%3A//github.com/gorhill/uBlock/wiki/Per-site-switches">per-site switches</a> from the <i>Settings</i> pane in the dashboard, under the <i>Default behavior</i> header. It was possible before to modify the default setting, but this had to be done by manually entering the proper rule in the <i>My rules</i> pane -- not very suitable to non-advanced users.
+<br/>&nbsp;
+<br/><b>Block media elements by size (issue #1163)</b>
+<br/>&nbsp;
+<br/>There is a new per-site switch: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/116f1043b04bd600baa33816f6eab993d6a2d27e18f2039a329a21a5938159f0/https%3A//raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1h.png">Block media elements by size</a> (image).
+<br/>&nbsp;
+<br/>Primary purpose is to save bandwidth. See <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/5ac26da66896178537f86259bba8a0b764b114ac506e3e2db00e34e2d990d3b9/https%3A//github.com/gorhill/uBlock/wiki/Per-site-switches%23no-large-media-elements">documentation</a> for more information.
+<br/>&nbsp;
+<br/>Note that this feature has been implemented with the utmost care to not add overhead to those not using it. The content scripts to handle interaction with blocked media elements are injected <i>if and only if</i> large media elements were actually blocked.
+<br/>&nbsp;
+<br/><b>Closed as fixed:</b>
+<br/>&nbsp;
+<br/><b>Firefox:</b>
+<br/><ul><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/8214d31a7caeb8267636f352b502fcfe38c7d52fd6060dc2fdd306167704adba/https%3A//github.com/gorhill/uBlock/issues/1321">Adding subscription from resource: URI does not work</a>.</li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/46126b8a8a5fbfe7570d4a1653a048e42d13ec52db31c7247b9e4dfd3cd73ece/https%3A//github.com/gorhill/uBlock/issues/1312">Remove toolbar button code path for FF29-35: fall back on legacy</a>.</li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/2b8e56c1fed747cf2fe69f305a51b7e4d7c42535ce14559e9259baf8860c939c/https%3A//github.com/gorhill/uBlock/issues/1305">uBO fails to block popup</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/9380f43e790a8aa45abbfafcc1d482196d4b3ae64bf2108db2b85f104a3e4a31/https%3A//github.com/gorhill/uBlock/issues/1276">IPv6 raw addresses are not correctly handled</a>.</li><li>[non-Australis] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/30383360b46f55632a624b0c45664b8f2a8e6aca2b2a416500b026a2a4b444fb/https%3A//github.com/gorhill/uBlock/issues/1257">Button is not added to Navigation Toolbar on new profiles</a>.</li></ul>
+<br/><b>Core:</b>
+<br/><ul><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/07d4520aa8e8cce818e7f115350d405ce02b2d2919fb1e5c3a9b6a71f89f4f39/https%3A//github.com/gorhill/uBlock/issues/1318">Fix problems reported in Debian Lintian's runs</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/aa770d947b5b543fff751fcbe3406211072b68d9904c79cb3f26058cbd093c1e/https%3A//github.com/gorhill/uBlock/issues/1317">Broken <code>domainCachePrune</code> may lead to un-garbage-collected memory</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/9c9b5db1977670e81eb8fc2f6236b41f08fe65934b8348b98f6d6fd93199abbf/https%3A//github.com/gorhill/uBlock/issues/1285">Refreshing in the dashboard</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/1d98fa104f720b9e54a2b7044b00c17595b626185ab08b2c666de750fdb90099/https%3A//github.com/gorhill/uBlock/issues/1246">Logger doesn't show origin of filters with unescaped regexes</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/8509f86aee8b6e9f2975ce1b522951cfbbad658621ddf199b3d7e163f564a05a/https%3A//github.com/gorhill/uBlock/issues/790">Make cloud storage import+merge more discoverable?</a></li></ul>
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/611efcb9cca3c263dd08f620b9d29a9bfc29692428bb843dfc81fe0adb6399f9/https%3A//github.com/gorhill/uBlock/compare/1.5.5...1.6.0">Commit history between 1.5.5 and 1.6.0</a>
+
+<h2>uBlock Origin 1.6.0rc2 - February  9, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/8ae0e1563bd5c11ccfcd51e5146c7dddfc4c6aa4e3fcbf265474bf7f6c99c1ae/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.0rc2">https://github.com/gorhill/uBlock/releases/tag/1.6.0rc2</a>
+<br/>&nbsp;
+<br/>Commit history since 1.5.5: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/e110326d800b9756283ead26c244c291584f5aff185dbe6e7319fea652ee7426/https%3A//github.com/gorhill/uBlock/compare/1.5.5...1.6.0rc2">https://github.com/gorhill/uBlock/compare/1.5.5...1.6.0rc2</a>
+
+<h2>uBlock Origin 1.6.0rc1 - February  3, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/965572658d01877ede0d950cffa9d5027de2ab73ba89460be22aef92d23be6b2/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.0rc1">https://github.com/gorhill/uBlock/releases/tag/1.6.0rc1</a>
+<br/>&nbsp;
+<br/>Commit history since 1.5.5: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/092d09a31b75b5ba7ef02689f133b051b7c1ba234731e10ee9781089ba0a6780/https%3A//github.com/gorhill/uBlock/compare/1.5.5...1.6.0rc1">https://github.com/gorhill/uBlock/compare/1.5.5...1.6.0rc1</a>
+
+<h2>uBlock Origin 1.6.0rc0 - January 29, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/56dd0ee2b289df0befcc42894fa1c8398a25410f4dec68b41aa0a222e2760d5b/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.0rc0">https://github.com/gorhill/uBlock/releases/tag/1.6.0rc0</a>
+<br/>&nbsp;
+<br/>Commit history since 1.5.5: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/b05a4cd1db6e6e5daab0e8466174ce9d15a4a0eb8c01414aa480e3e0f62b546c/https%3A//github.com/gorhill/uBlock/compare/1.5.5...1.6.0rc0">https://github.com/gorhill/uBlock/compare/1.5.5...1.6.0rc0</a>
+
+<h2>uBlock Origin 1.6.0b8 - January 27, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/81da586386ee8eba22d83d59dd467beb3d20234c2f62d042cb05a3552469f1aa/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.0b8">https://github.com/gorhill/uBlock/releases/tag/1.6.0b8</a>
+<br/>&nbsp;
+<br/>Commit history since 1.5.5: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/73b47cc913094e3633e7c3bea694c666aad797391bd956cdab9f65d6cc3c5d2f/https%3A//github.com/gorhill/uBlock/compare/1.5.5...1.6.0b8">https://github.com/gorhill/uBlock/compare/1.5.5...1.6.0b8</a>
+
+<h2>uBlock Origin 1.6.0b7 - January 26, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/379f7f319dea4536e5ba6a3d1a5109e85b6258267fe3d4a3543fc030159bcb86/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.0b7">https://github.com/gorhill/uBlock/releases/tag/1.6.0b7</a>
+<br/>&nbsp;
+<br/>Commit history since 1.5.5: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/f62e5eb10be0b4627d391cbfbe1804fd843b75ddd32a4beb6a0196260557820c/https%3A//github.com/gorhill/uBlock/compare/1.5.5...1.6.0b7">https://github.com/gorhill/uBlock/compare/1.5.5...1.6.0b7</a>
+
+<h2>uBlock Origin 1.6.0b6 - January 23, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/2e7b998d5bd3f74a6c11320c06f83f8f92d7219d884f47d6e2b8ae737c959f60/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.0b6">https://github.com/gorhill/uBlock/releases/tag/1.6.0b6</a>
+<br/>&nbsp;
+<br/>Commit history since 1.5.5: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/4439a9e284b96cc7aea1e0d25bc03a754d9b3205d06796d04a03763f863cfc5c/https%3A//github.com/gorhill/uBlock/compare/1.5.5...1.6.0b6">https://github.com/gorhill/uBlock/compare/1.5.5...1.6.0b6</a>
+
+<h2>uBlock Origin 1.6.0b2 - January 19, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/bc20979436caa1d8352d9fdfebd45233b5f348bdf48708b04e9883a3569d977f/https%3A//github.com/gorhill/uBlock/releases/tag/1.6.0b2">https://github.com/gorhill/uBlock/releases/tag/1.6.0b2</a>
+<br/>&nbsp;
+<br/>Commit history since 1.5.5: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/1f2d715d6e6e6e427605d6f592195cd94b18a18c7a6592a706ecf595b37d5556/https%3A//github.com/gorhill/uBlock/compare/1.5.5...1.6.0b2">https://github.com/gorhill/uBlock/compare/1.5.5...1.6.0b2</a>
+
+<h2>uBlock Origin 1.5.5 - January 10, 2016</h2>
+Summary of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/e5cb8b3032af072f3fa13646504a17e7c59cf0acc97d71e1683a0c94c2ad9be9/https%3A//github.com/gorhill/uBlock/releases/tag/1.5.5">changes</a>:
+<br/>&nbsp;
+<br/><b>Closed as fixed:</b>
+<br/>&nbsp;
+<br/><b>Core:</b>
+<br/><ul><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/a9c4bded87492d695853f97cebbf7337ebc87f12d057443ebf28f2811b803481/https%3A//github.com/gorhill/uBlock/issues/1206">constructor.com and constructor.io websites appear blank</a>.</li></ul>
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/995cfe26b2e5efb9d92073cb97fc3698aceca840fe7a35fc2eddfe6a86b60882/https%3A//github.com/gorhill/uBlock/compare/1.5.4...1.5.5">Commit history between 1.5.4 and 1.5.5</a>
+
+<h2>uBlock Origin 1.5.4 - January 10, 2016</h2>
+Summary of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/3b66eee8e8ac0b7489b9a992a5268a8082880d24891ff5bb135e9a60bfb5467e/https%3A//github.com/gorhill/uBlock/releases/tag/1.5.4">changes</a>:
+<br/>&nbsp;
+<br/><b>Closed as fixed:</b>
+<br/>&nbsp;
+<br/><b>Firefox:</b>
+<br/><ul><li>[Regression bug] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/4827922e0489b14af70122c82505d6272a2f2a1b327e1da4a234960deffe92a1/https%3A//github.com/gorhill/uBlock/issues/1201">Blocking inline scripts inside iframe</a>.</li></ul>
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/346672eebdde0756e135c0a06460d0ff2843fd76863f8dcd5670c2e399b7ace6/https%3A//github.com/gorhill/uBlock/compare/1.5.3...1.5.4">Commit history between 1.5.3 and 1.5.4</a>
+
+<h2>uBlock Origin 1.5.3 - January  6, 2016</h2>
+Summary of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/fe67a86ed07d43f6ef6a7d6121e0d59fe44b32845cf39133b88cd9e604fd128d/https%3A//github.com/gorhill/uBlock/releases/tag/1.5.3">changes</a>:
+<br/>&nbsp;
+<br/><b>Changes:</b>
+<br/>&nbsp;
+<br/>uBO will now automatically select the filter list which matches the current browser locale at first install time. This change does nothing if you have uBO already installed.
+<br/>&nbsp;
+<br/><b>Closed as fixed:</b>
+<br/>&nbsp;
+<br/><b>Core:</b>
+<br/>&nbsp;
+<br/><ul><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/82f490ec34b66b392bbd21e29477b81531b2271875e405f17eae91b1525d5ce9/https%3A//github.com/gorhill/uBlock/issues/912">Show number of popups blocked</a>.</li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/8d48c3ed18b8e49873df801e96464b17c8d4284ba0c1c485d4b82a5d74239dfb/https%3A//github.com/gorhill/uBlock/issues/838">The script tag filters ignore the whitelist</a>.</li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/259348ffa3affb4400365902838207bea0ce67dc94485c2819997499517616de/https%3A//github.com/gorhill/uBlock/issues/830">Titlebar should have a settings icon</a>.</li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/2c17ad9af42ecefbe5b21d048273847fe61bf642b71908d85c345e2c01b5e8a3/https%3A//github.com/gorhill/uBlock/issues/747">Why not add by default the ad list of the locale of the browser?</a>.</li></ul>
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/107c9da7c2223e89dbf4958140c4f96c31c960c15c2b8f8b9ed20deb19579e81/https%3A//github.com/gorhill/uBlock/compare/1.5.1...1.5.3">Commit history between 1.5.1 and 1.5.3</a>
+
+<h2>uBlock Origin 1.5.3rc0 - January  5, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/a8a4713701e0dbdec5d955ee992b89084af7f9cafccfe1412b6de85f44129b8f/https%3A//github.com/gorhill/uBlock/releases/tag/1.5.3rc0">https://github.com/gorhill/uBlock/releases/tag/1.5.3rc0</a>
+<br/>&nbsp;
+<br/>Commit history since 1.5.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/8c525002898408a5d1ffef02a77262ba1b8e54fe7db92090cbc00709d415e89c/https%3A//github.com/gorhill/uBlock/compare/1.5.1...1.5.3rc0">https://github.com/gorhill/uBlock/compare/1.5.1...1.5.3rc0</a>
+
+<h2>uBlock Origin 1.5.3b2 - January  3, 2016</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/6aa41532d2cb263ccec0086a7787993b3075d978aa6fd0aaa421d3865e5698df/https%3A//github.com/gorhill/uBlock/releases/tag/1.5.3b2">https://github.com/gorhill/uBlock/releases/tag/1.5.3b2</a>
+<br/>&nbsp;
+<br/>Commit history since 1.5.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/5253011f3c4b4bc4aebe5812ecc60bb6675cf7b3116c18a6d93ad28b68ef2ff6/https%3A//github.com/gorhill/uBlock/compare/1.5.1...1.5.3b2">https://github.com/gorhill/uBlock/compare/1.5.1...1.5.3b2</a>
+
+<h2>uBlock Origin 1.5.3b0 - December 29, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/f6af5bb589a108b0b217bd3d8175707eaa931b06bec9c684a77d4c456aa84f68/https%3A//github.com/gorhill/uBlock/releases/tag/1.5.3rb0">https://github.com/gorhill/uBlock/releases/tag/1.5.3rb0</a>
+<br/>&nbsp;
+<br/>Commit history since 1.5.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/94344be6c1c50f4fa0d8928fc3b29d029d796910ff696b2b03f5d8c61a0a44e0/https%3A//github.com/gorhill/uBlock/compare/1.5.1...1.5.3b0">https://github.com/gorhill/uBlock/compare/1.5.1...1.5.3b0</a>
+
+<h2>uBlock Origin 1.5.1 - December 27, 2015</h2>
+Summary of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/3d1176a0b2b3c1d49a23dddf28e5ffe7d849216c709d1841466963b1ee0a123d/https%3A//github.com/gorhill/uBlock/releases/tag/1.5.1">changes</a>:
+<br/>&nbsp;
+<br/><b>Closed as fixed:</b>
+<br/>&nbsp;
+<br/><b>Core:</b>
+<br/>&nbsp;
+<br/><ul><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/1d7550711c8794ad39af0856101c0a6fb7314b51508ee7c0f54e9265fc8c96e7/https%3A//github.com/gorhill/uBlock/issues/1127">Domain option is ignored</a> (regression bug).
+<br/>    <ul>    <li>Survey shows 137 filters were affected in EasyList+EasyPrivacy combined: Filters with a `domain=` option with one single negated hostname were affected.
+<br/>    </li></ul></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/666d75bf4e9da8f8112c1c7f8f23d42b2b6b8d3318ff56b158986d4d2c395a52/https%3A//github.com/gorhill/uBlock/issues/1094%23issuecomment-167426198">Entity-based script injection cosmetic filters not working</a>.</li></ul>
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/2df5da838026ad9855afb83f88140712d5b313064a160155a8ec50de6fa362ff/https%3A//github.com/gorhill/uBlock/compare/1.5.0...1.5.1">Commit history between 1.5.0 and 1.5.1</a>
+
+<h2>uBlock Origin 1.5.0 - December 26, 2015</h2>
+Summary of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/b800eb1fa34a0da3d6bbfc743f519a6eeddf99dc28573575c9dc85a11929e6f0/https%3A//github.com/gorhill/uBlock/releases/tag/1.5.0">changes</a>:
+<br/>&nbsp;
+<br/><b>New:</b>
+<br/>&nbsp;
+<br/>Ability to inject script resource from the resource library directly into a page -- i.e. not through redirection. Can be used to defeat some otherwise hard to defeat ad injection mechanisms on some sites. More specifically, this allows to defeat AdDefend- or Yavli-based ads on many sites (as of writing), which so far were defeated only through inline script tag filtering -- so this means that now Chromium-based browsers can also bypass AdDefend/Yavli (for example, see #1100). Some documentation available <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/3c170b7e9db605765fff873a0ddb37fb3b006ea32e48bb53a8b7d4e048492a55/https%3A//github.com/gorhill/uBlock/wiki/Static-filter-syntax%23special-cosmetic-filters">here</a> (will eventually create a dedicated page).
+<br/>&nbsp;
+<br/>Enabling <i>advanced user</i> mode won't cause the tooltips to be disabled anymore. There is now a separate setting for tooltips in the <i>Settings</i> pane: <i>"Disable tooltips"</i>. Tooltips are enabled by default.
+<br/>&nbsp;
+<br/><b>Closed as fixed:</b>
+<br/>&nbsp;
+<br/><b>Core:</b>
+<br/>&nbsp;
+<br/><ul><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/91acabf62760f83e8d6be733e919b42109085edd76ef38b449e518a15ccdc023/https%3A//github.com/gorhill/uBlock/issues/1093">[Logger] Cannot reverse find a specific filter</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/5f8967f7150b2734bf79f68dd5ddf15c08779e4bfac0e933057984d56d72eb92/https%3A//github.com/gorhill/uBlock/issues/1076">On a site with 0 connections displayed</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/fa334245a3ee2ef26bafe04cadbfe1641a6dd4245a57cc397f5936f8b4cc4033/https%3A//github.com/gorhill/uBlock/issues/1067">[Efficiency] Make use of <code>String.prototype.startsWith</code></a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/881eaa6156673d9a535490fb61f2beb7b74b5ed441b07670641536f66027e51b/https%3A//github.com/gorhill/uBlock/issues/1066"><code>no-popups: * true</code> rule blocks opening of a clicked url</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/0438a09adb984203ce65c5e7edc1f7b2a132fd32c2a45eda399c07435f044394/https%3A//github.com/gorhill/uBlock/issues/1056">[static filter syntax] separator characters (^) support</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/85ac607321ed84462ef07f83808f94fc8851a6ebb93d667d3e05e96d264f96a7/https%3A//github.com/gorhill/uBlock/issues/451">Use case: does an advanced user still need tooltips?</a></li></ul>
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/c4696d0f7fd79c47522437a501b9b92a6616c07a0d8c86e24b477af2e6979c2c/https%3A//github.com/gorhill/uBlock/compare/1.4.0...1.5.0">Commit history between 1.4.0 and 1.5.0</a>
+
+<h2>uBlock Origin 1.5.0rc1 - December 23, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/102439947f7b463d630d9618797894955d843431c6f939358f6ed71d4359e2e2/https%3A//github.com/gorhill/uBlock/releases/tag/1.5.0rc1">https://github.com/gorhill/uBlock/releases/tag/1.5.0rc1</a>
+<br/>&nbsp;
+<br/>Commit history since 1.4.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/19d073267cb56700ea8f314dc000c8997113090ab0d3bfea67004355753de965/https%3A//github.com/gorhill/uBlock/compare/1.4.0...1.5.0rc1">https://github.com/gorhill/uBlock/compare/1.4.0...1.5.0rc1</a>
+
+<h2>uBlock Origin 1.5.0rc0 - December 23, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/6ac20d4aabae6fe3bbf96b199909a66712daf17ec928a50cbb6897c036b06870/https%3A//github.com/gorhill/uBlock/releases/tag/1.5.0rc0">https://github.com/gorhill/uBlock/releases/tag/1.5.0rc0</a>
+<br/>&nbsp;
+<br/>Commit history since 1.4.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/26516943b399461e7a008924ead23b4f73b52ad3a644d6ae453f5195e49c3361/https%3A//github.com/gorhill/uBlock/compare/1.4.0...1.5.0rc0">https://github.com/gorhill/uBlock/compare/1.4.0...1.5.0rc0</a>
+
+<h2>uBlock Origin 1.4.1b7 - December 22, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/cbfb18d9dc0f0589fbfa22961926c6e785dbd550207ae4321559eae0413476a6/https%3A//github.com/gorhill/uBlock/releases/tag/1.4.1b7">https://github.com/gorhill/uBlock/releases/tag/1.4.1b7</a>
+<br/>&nbsp;
+<br/>Commit history since 1.4.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/7b8cb3b14bae0fe7206fb0b59c4415238d66ab6a77a451768cbdb6699455626b/https%3A//github.com/gorhill/uBlock/compare/1.4.0...1.4.1b7">https://github.com/gorhill/uBlock/compare/1.4.0...1.4.1b7</a>
+
+<h2>uBlock Origin 1.4.1b6 - December 19, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/930c9c18577cd141364ad2382038a56df6fa5cf872e50e297608c3d47d0e7539/https%3A//github.com/gorhill/uBlock/releases/tag/1.4.1b6">https://github.com/gorhill/uBlock/releases/tag/1.4.1b6</a>
+<br/>&nbsp;
+<br/>Commit history since 1.4.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/b45168457790d319a74c40574fec35d8cf5db773ad8865b304900aaddfaa8a6c/https%3A//github.com/gorhill/uBlock/compare/1.4.0...1.4.1b6">https://github.com/gorhill/uBlock/compare/1.4.0...1.4.1b6</a>
+
+<h2>uBlock Origin 1.4.1b5 - December 17, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/d32537c1fcaad6324a1ff7ee06159361a2ec96858b78b78cb0449b5c6a2bf7e6/https%3A//github.com/gorhill/uBlock/releases/tag/1.4.1b5">https://github.com/gorhill/uBlock/releases/tag/1.4.1b5</a>
+<br/>&nbsp;
+<br/>Commit history since 1.4.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/83814cdaa56e1b9d9d274e72fd2af0668a73d9cdc7fcc004e08d80106376524c/https%3A//github.com/gorhill/uBlock/compare/1.4.0...1.4.1b5">https://github.com/gorhill/uBlock/compare/1.4.0...1.4.1b5</a>
+
+<h2>uBlock Origin 1.4.1b4 - December 15, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/52d666163f3ef8827c1c80861bd820a16810deef1e7acb2dcfdab8399449a3f4/https%3A//github.com/gorhill/uBlock/releases/tag/1.4.1b4">https://github.com/gorhill/uBlock/releases/tag/1.4.1b4</a>
+<br/>&nbsp;
+<br/>Commit history since 1.4.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/a92eadedc4e6d5de28709cbea33ba4067ba7022b3d20bc5663e9b30921fa9047/https%3A//github.com/gorhill/uBlock/compare/1.4.0...1.4.1b4">https://github.com/gorhill/uBlock/compare/1.4.0...1.4.1b4</a>
+
+<h2>uBlock Origin 1.4.1b3 - December 15, 2015</h2>
+[no description]
+
+<h2>uBlock Origin 1.4.1b2 - December 13, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/5a325ee88e12307e35bb8f4bca464947022b4825cf81c3962c578f6fa1102f19/https%3A//github.com/gorhill/uBlock/releases/tag/1.4.1b2">https://github.com/gorhill/uBlock/releases/tag/1.4.1b2</a>
+<br/>&nbsp;
+<br/>Commit history since 1.4.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/24f80d3cfaff7d700e1f6bbec261ab64697bb791466b31f0516268e573311622/https%3A//github.com/gorhill/uBlock/compare/1.4.0...1.4.1b2">https://github.com/gorhill/uBlock/compare/1.4.0...1.4.1b2</a>
+
+<h2>uBlock Origin 1.4.1b0 - December 13, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/d3ae0f2c5c725649aabaa62ab59d2b982eac33d88af4ee1aba15e9e13ffdb0d4/https%3A//github.com/gorhill/uBlock/releases/tag/1.4.1b0">https://github.com/gorhill/uBlock/releases/tag/1.4.1b0</a>
+<br/>&nbsp;
+<br/>Commit history since 1.4.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/4906d8f6831d7a981ac7c8ed2cba2fd69d523550294d9c58058823808a6fb687/https%3A//github.com/gorhill/uBlock/compare/1.4.0...1.4.1b0">https://github.com/gorhill/uBlock/compare/1.4.0...1.4.1b0</a>
+
+<h2>uBlock Origin 1.4.0 - December 12, 2015</h2>
+Summary of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/0850dc1c26e912006ce84601c3c3b6c0c41d04ff1e09c4a5b9ec386da5939de1/https%3A//github.com/gorhill/uBlock/releases/tag/1.4.0">changes</a>:
+<br/>&nbsp;
+<br/><b>New:</b>
+<br/>&nbsp;
+<br/><b>Ability to use Adguard filter lists</b>
+<br/>&nbsp;
+<br/>You can now directly use <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/60881d85810d6f41dc2ba50c4a8c42f96c84a0af7174cae9f274ab1c86c4c0c2/https%3A//adguard.com/en/filters.html">Adguard filter lists</a>. Filters which use Adguard-specific filter syntax extension will simply be discarded by uBO.
+<br/>&nbsp;
+<br/><b>Popunders</b>
+<br/>&nbsp;
+<br/>A new filter type is introduced: <code>popunder</code>. This gives uBlock Origin the ability to block popunders. Popunders are when a web page opens a new legitimate content in another tab or window, while at the same time loading nuisance content in the current tab. They are essentially the reverse of what is happening with nuisance popups, where the nuisance content is opened in a new tab or window.
+<br/>&nbsp;
+<br/>Since the <code>popunder</code> option is specific to uBO, any instance of sites using popunders will have to be reported on the <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/f28cbb270490665ed7d7f7c6456df000c04ebb4afad1c36e3592f88fcd92225b/https%3A//github.com/gorhill/uBlock/issues">issue tracker</a> so that filters can be crafted to address the issue for those sites.
+<br/>&nbsp;
+<br/><b>Redirection infrastructure</b>
+<br/>&nbsp;
+<br/>Consider this still experimental. This adds the option to map blocked network requests to uBO-provided resources. Specifically, this solves issue raised in <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/93bacae1bcbc2aee1e9d0572610b0669076d9a87f32c947c6aa074eec00dd30a/https%3A//github.com/gorhill/uBlock/issues/949">#949</a> and <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/a757b9ef805781f50dc3751eafb5f3fb623ed1ea869d76cf494afd21ab59b3b6/https%3A//github.com/gorhill/uBlock/issues/1043">#1043</a> -- and more generally consider this yet another tool in uBO's arsenal to enforce users' choices.
+<br/>&nbsp;
+<br/>The library of resources which are used for redirection is -- and will always be completely under control of uBO, this is not something under the control of any 3rd parties. This ensures only safe resources are used for redirection.
+<br/>&nbsp;
+<br/>It could be said this feature is vaguely similar to <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/21e0f1e9c6ab34d26e6e2a9a6a7f3a0803b6a40552dcbdd1ad23548403a6398e/https%3A//forums.informaction.com/viewforum.php%3Ff=26">NoScript's surrogates</a>, except that in the case of uBO it's network redirection to plainly map one resource into another one, and it can be used for any kind of resource, not just scripts (anything which can be represented with a <code>data:</code> URI).
+<br/>&nbsp;
+<br/>Only blocked network requests are candidates for redirection.
+<br/>&nbsp;
+<br/>To create a redirection filter, just add the <code>redirect=[...]</code> filter option to it, like so:
+<br/>&nbsp;
+<br/><code>||<a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/b0cbe04b3d77ad72078ae975ef6609a895db8c3b1ff43a9520c94947e4ba61f3/http%3A//example.com/badimage.%2A%24image%2Credirect=2x2-transparent.png">example.com/badimage.*$image,redirect=2x2-transparent.png</a></code>
+<br/>&nbsp;
+<br/>The <code>[...]</code> is a token identifying the resource to which to redirect: it must be a resource which appears in the <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/4c04370493329c7c1dc7030a3cc374740a7c53500c5fd0cba6bd02ea099c8f4c/https%3A//github.com/gorhill/uBlock/blob/master/assets/ublock/redirect-resources.txt">redirection library</a>.
+<br/>&nbsp;
+<br/>For the <code>redirect=</code> filter option to be taken into account, some conditions must be met by the static filter, for efficiency purpose. The static filter ...
+<br/>&nbsp;
+<br/><ul><li>must be hostname-anchored, i.e. starts with <code>||</code>.</li><li>must have one type specified -- negated types are not valid.</li><li>must have a redirect token which identifies an existing resource in the redirection library.</li></ul>
+<br/>If at least one of the above conditions is not met, no redirection will take place, though the filter will still block matching network requests.
+<br/>&nbsp;
+<br/>&nbsp;
+<br/><b>Issues closed as fixed:</b>
+<br/>&nbsp;
+<br/><b>Firefox</b>
+<br/>&nbsp;
+<br/><ul><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/b15f37825dedf3226beef78e91748394dea7d3ce67c50d57daf0afb72220725c/https%3A//github.com/gorhill/uBlock/issues/959">NoScript Force HTTPS feature interferes with uBlock Origin</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/289c8f570d5bc43941f22c4d2f8cf11e052bcb8c035d8967ed298a8d086f40c7/https%3A//github.com/gorhill/uBlock/issues/943">Default browser font does not work well for dynamic filtering panel</a></li></ul>
+<br/><b>Pale Moon / SeaMonkey</b>
+<br/>&nbsp;
+<br/><ul><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/466876757cbd14f2cd92847285b52fd4fe8e1c796d0bfeabad125e992f52ed93/https%3A//github.com/gorhill/uBlock/issues/1004">uBlock Origin breaks custom toolbars in Palemoon</a>
+<br/>    <ul>    <li>Possibly related: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/c1b6390dfcf25a1a0e9814aec81f14a1f63296608035a63f93974bd8c389c60b/https%3A//github.com/gorhill/uBlock/issues/1034">[SeaMonkey] Filter list is empty after browser restart</a>
+<br/>    </li></ul></li></ul>
+<br/><b>Core</b>
+<br/>&nbsp;
+<br/><ul><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/041c1d2efca3c4e3ec3ff72048c2095ae3c8fe9fb2993f01a1370b3144eff1ca/https%3A//github.com/gorhill/uBlock/issues/1031">Site disables uBlock Origin's own style tags</a></li><li>[Pull request] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/936a0baa8cafeca6936530d9a230caece4c88d576bd6ad8b916048129ed73760/https%3A//github.com/gorhill/uBlock/pull/1029">Add YousList as a Korean third party filter</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/d7e3a6f7201ea63c9bdecde39eb70f79c75d98900ecab1f03889399030db8fcb/https%3A//github.com/gorhill/uBlock/issues/1024">Element picker: a selected element with width or height of zero should fall back on dimensions of child elements</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/4656264d4b73ea9ec7d238dc35b283611275a9339a36dacb1f8364ea5962ed28/https%3A//github.com/gorhill/uBlock/issues/1022">End "My filters" list with empty line</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/a2c66ad7a462a9986fe38a4e22fc3d5ee22305ec0d18d193723a25dffb22dcf1/https%3A//github.com/gorhill/uBlock/issues/1015">Cosmetic filter fails to hide element</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/f9c0790bcdff93471f7be338d368f799c46de482dff2c3b912cab7eef83e3a01/https%3A//github.com/gorhill/uBlock/issues/997">The white list is invalid</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/26a9737a2eba90570cd4574983aaf80f0bffb4a29a73c0e0880623fca258db10/https%3A//github.com/gorhill/uBlock/issues/978">uBO is causing CPU hog with imdb.com (popup video)</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/7e1ecd56cbd65bdd08511e1acf282cef19dc03ef0182fc41fd5b919cbee70573/https%3A//github.com/gorhill/uBlock/issues/951">Support subscribe links</a></li><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/93bacae1bcbc2aee1e9d0572610b0669076d9a87f32c947c6aa074eec00dd30a/https%3A//github.com/gorhill/uBlock/issues/949">Block ad videos playing automatically</a></li><li>Fixed issue arising from <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/c47263d91fefc6c61aad7cad1a8deb8dc01a25c442bf2ae3735b3f2adf111d57/https%3A//github.com/gorhill/uBlock/issues/909">Add the I don't care about cookies filter to Regions, languages?</a> (<a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/81dce9da13fdcdb8c276c75203e029661d233864fe6e543867a2bca0ca93fc77/https%3A//github.com/gorhill/uBlock/issues/909%23issuecomment-158568400">see comment</a>).</li></ul>
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/48b22800a1c73eb3fcc13ae922c11824340af64d5198dcf624414d85541fec7a/https%3A//github.com/gorhill/uBlock/compare/1.3.6...1.4.0">Commit history between 1.3.6 and 1.4.0</a>
+
+<h2>uBlock Origin 1.4.0rc4 - December 11, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/3addf8600b23325c1f13b436e2834227c6cdfffaea6288e623c31146f6b6f347/https%3A//github.com/gorhill/uBlock/releases/tag/1.4.0rc4">https://github.com/gorhill/uBlock/releases/tag/1.4.0rc4</a>
+<br/>&nbsp;
+<br/>Commit history since 1.3.6: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/56a583c85847a45d9e66224eb6d7301ac16649efea0dd3ee8496d4424c4fff04/https%3A//github.com/gorhill/uBlock/compare/1.3.6...1.4.0rc4">https://github.com/gorhill/uBlock/compare/1.3.6...1.4.0rc4</a>
+
+<h2>uBlock Origin 1.4.0rc2 - December  9, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/182054c2c02a17c79840a56ebeba5c79c91682420c87671181ff5ff0ae4bd0f8/https%3A//github.com/gorhill/uBlock/releases/tag/1.4.0rc2">https://github.com/gorhill/uBlock/releases/tag/1.4.0rc2</a>
+<br/>&nbsp;
+<br/>Commit history since 1.3.6: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/2f4113ee65eaa189a7938756de201edb2fa399b4b468a30719bb614e8ef694c5/https%3A//github.com/gorhill/uBlock/compare/1.3.6...1.4.0rc2">https://github.com/gorhill/uBlock/compare/1.3.6...1.4.0rc2</a>
+
+<h2>uBlock Origin 1.4.0rc0 - December  7, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/bf12ed8f71cb0e329d7567d2d0124748e66e916daf5d4cea79b9092234c89e77/https%3A//github.com/gorhill/uBlock/releases/tag/1.4.0rc0">https://github.com/gorhill/uBlock/releases/tag/1.4.0rc0</a>
+<br/>&nbsp;
+<br/>Commit history since 1.3.6: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/9431426185242e8e48b7155bf02063178005f0e2205630898ebc06b16b9ac309/https%3A//github.com/gorhill/uBlock/compare/1.3.6...1.4.0rc0">https://github.com/gorhill/uBlock/compare/1.3.6...1.4.0rc0</a>
+
+<h2>uBlock Origin 1.3.7b10 - December  1, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/1be53c51e1e1540ded5d3502b76f52495a01ac5c47088f9676ece529b55b9bad/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.7b10">https://github.com/gorhill/uBlock/releases/tag/1.3.7b10</a>
+<br/>&nbsp;
+<br/>Commit history since 1.3.6: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/ec61eacf6d1ab01cdddff11bf1f65b4b0c72fe240056a0d2ff00a491af8fe343/https%3A//github.com/gorhill/uBlock/compare/1.3.6...1.3.7b10">https://github.com/gorhill/uBlock/compare/1.3.6...1.3.7b10</a>
+
+<h2>uBlock Origin 1.3.7b7 - November 29, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/ccfb08e70d946e7afa11f2114590d915a25f040cce5902c9ed39669c8e592320/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.7b7">https://github.com/gorhill/uBlock/releases/tag/1.3.7b7</a>
+<br/>&nbsp;
+<br/>Commit history since 1.3.6: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/0b53f8dd33b9a05e2c1513947360f62f22e31c24c670618dddb24ce85abcedc0/https%3A//github.com/gorhill/uBlock/compare/1.3.6...1.3.7b7">https://github.com/gorhill/uBlock/compare/1.3.6...1.3.7b7</a>
+
+<h2>uBlock Origin 1.3.7b6 - November 28, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/52016900201168396b53bd52b71046e20fc86aea441e9c6107f42921021729f6/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.7b6">https://github.com/gorhill/uBlock/releases/tag/1.3.7b6</a>
+<br/>&nbsp;
+<br/>Commit history since 1.3.6: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/b39226be4506152f1e15ddaa9ad4d68f783d18992bf7d8ab1e02840d4b339c27/https%3A//github.com/gorhill/uBlock/compare/1.3.6...1.3.7b6">https://github.com/gorhill/uBlock/compare/1.3.6...1.3.7b6</a>
+
+<h2>uBlock Origin 1.3.6 - November 21, 2015</h2>
+Summary of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/b799d8266cdc720255f290393f3bdf9eeb1310da575de37ff26c0033af455670/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.6">changes</a>:
+<br/>&nbsp;
+<br/><b>Issue closed as fixed:</b>
+<br/>&nbsp;
+<br/><ul><li>[Firefox for Android] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/f28a4a2b134403a4848418f22121bd1d0962588d4c1ee2c798e5fb5e6de1c028/https%3A//github.com/gorhill/uBlock/issues/955">uBlock Origin 1.3.4 (and next) broken in Firefox for Android Release (42.0.1) until I disable/enable</a>.<ul><li>Timing issue, so not necessarily everybody was affected by the bug.</li></ul></li></ul>
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/9099a95a0b17726d44cd7bda9d8f37821e765ec0d94f8ae43aee2dce422f92de/https%3A//github.com/gorhill/uBlock/compare/1.3.5...1.3.6">Commit history between 1.3.5 and 1.3.6</a>
+
+<h2>uBlock Origin 1.3.6rc0 - November 21, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/f072c757d6c992b30b5ee2cefe910576d6d34232b64a970936a95041337c49fd/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.6rc0">https://github.com/gorhill/uBlock/releases/tag/1.3.6rc0</a>
+<br/>&nbsp;
+<br/>Commit history since 1.3.5: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/b31b45fc93fb06770a3b15a0f61078fd41ba50a1b4ace4862c2128645724202b/https%3A//github.com/gorhill/uBlock/compare/1.3.5...1.3.6rc0">https://github.com/gorhill/uBlock/compare/1.3.5...1.3.6rc0</a>
+
+<h2>uBlock Origin 1.3.6b1 - November 20, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/7bf7947f1f62a1fe5c1caf6701c8f6431647ad43996d53d3c45765193f7d519d/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.6b1">https://github.com/gorhill/uBlock/releases/tag/1.3.6b1</a>
+<br/>&nbsp;
+<br/>Commit history since 1.3.5: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/6533f3655d1e617960d838cb6c4f5e5bf6364b5501525579b2e1bba3888b2e10/https%3A//github.com/gorhill/uBlock/compare/1.3.5...1.3.6b1">https://github.com/gorhill/uBlock/compare/1.3.5...1.3.6b1</a>
+
+<h2>uBlock Origin 1.3.5 - November 19, 2015</h2>
+Summary of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/328d60c3a741b7599e2cb9073d57efbe43e75de77c09e6a02fdbb0c2f683f101/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.5">changes</a>:
+<br/>&nbsp;
+<br/><b>Issue closed as fixed:</b>
+<br/>&nbsp;
+<br/><ul><li>[Pale Moon] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/f5e332d4740c427c5c96e7f16096ba9c658613c1a89335f04eb7030b39fe39e3/https%3A//github.com/gorhill/uBlock/issues/948">1.3.4 removed all settings &amp; built in 3rd party filters</a>.<ul><li>This probably also affected older versions of Firefox.</li></ul></li></ul>
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/e1b9df3ed2d24a4d305d3af22ca7cf830efb5feae24fa5afc3ad588038f5caf5/https%3A//github.com/gorhill/uBlock/compare/1.3.4...1.3.5">Commit history between 1.3.4 and 1.3.5</a>
+
+<h2>uBlock Origin 1.3.4 - November 19, 2015</h2>
+Summary of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/e02918f8941e590c479f3b6582a5e2f7e982b7ead2a133c46cace9810fe2980e/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.4">changes</a>:
+<br/>&nbsp;
+<br/><b>Issues closed as fixed:</b>
+<br/>&nbsp;
+<br/><ul><li>[Firefox] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/62bf25195f3361ca003ddab56d67136e55bfba9ffdfbed21f6b623a53ba7a9e9/https%3A//github.com/gorhill/uBlock/issues/940">Inline script tag filtering incompatible with Firefox ESR 38</a>.</li><li>[Firefox] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/620804673d6e8d0e41faa795be392a0a8b4ae08a5fde5890952df7ee909e9991/https%3A//github.com/gorhill/uBlock/issues/906">Mouse context menu broken</a>.</li><li>[Firefox] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/ece4d8f4a7a620149a39c28950b7133be23b1fea5995b650538613b763f55b1e/https%3A//github.com/gorhill/uBlock/issues/894">WebRTC and FF 42.0</a>.
+<br/>    <ul>    <li>With Firefox 42+, it is now possible to prevent local IP address leakage without entirely disabling WebRTC.
+<br/>    </li></ul></li><li>[Firefox] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/a036da67be8c8f647bedcdc8658b399ccaa071f4498d26f404229a79fb3e41b9/https%3A//github.com/gorhill/uBlock/issues/876">Cosmetic filters not always reported by logger on Firefox 42 if you refresh the page</a>.</li><li>[Firefox for Android] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/13dddf67b486d384a743c057df036ea1016a1683d4f059be13d1c5db25de0d23/https%3A//github.com/gorhill/uBlock/issues/749">uBlock Origin 1.1.1 broken in FF-nightly until I disable/enable</a>.
+<br/>    <ul>    <li>Thanks to <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/953c5ea522c07ade2533e7811210a326f75d80767d65eb16b77e55ef48d3efa8/https%3A//github.com/AlexVallat">@AlexVallat</a> for having investigated the root cause of the issue.
+<br/>    </li></ul></li><li>[Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/14738706c3b0d827848eb39bd967cdbfa5961f69f32e4ad95cfdf282f87dfa4e/https%3A//github.com/gorhill/uBlock/issues/873">Cosmetic filtering have no effect</a>.</li><li>[Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/1a4d3025c1015f45d321bf2a5997e5051e92a357bdca1ac18ce61296521cf244/https%3A//github.com/gorhill/uBlock/issues/850">[Performance] Use getElementsByTagName for high-medium generic cosmetic filters</a>.</li><li>[Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/204ca39603be54a561ecd7435d381ef8a896e5dacbb8e0350c78fa5aaa42cc98/https%3A//github.com/gorhill/uBlock/issues/842">/\.js$/ does not work</a>.</li></ul>
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/fe5201358b4df84ee97e17de123dbcb53fc75e70fb8de606bdab7730b377f050/https%3A//github.com/gorhill/uBlock/compare/1.3.2...1.3.4">Commit history between 1.3.2 and 1.3.4</a>
+
+<h2>uBlock Origin 1.3.4rc2 - November 16, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/13267ce434d03653b54c592420dc2f3061b09ff70bde8b2a7bc3d8b3a8218ef4/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.4rc2">https://github.com/gorhill/uBlock/releases/tag/1.3.4rc2</a>
+<br/>&nbsp;
+<br/>Commit history since 1.3.2: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/5fb5f38f79fc285ae81659fad1706866db55fb4e51b14f356999a29b46db79e6/https%3A//github.com/gorhill/uBlock/compare/1.3.2...1.3.4rc2">https://github.com/gorhill/uBlock/compare/1.3.2...1.3.4rc2</a>
+
+<h2>uBlock Origin 1.3.4rc1 - November 14, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/7f5b5e06800767814b928820a246e70cbe4a765e2f3c0cc1d936c8eead2c8fe3/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.4rc1">https://github.com/gorhill/uBlock/releases/tag/1.3.4rc1</a>
+<br/>&nbsp;
+<br/>Commit history since 1.3.2: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/3edd3a16f88ea7e218e2636fc4c41431bcd079cfd27c78f729eea2610d25fce0/https%3A//github.com/gorhill/uBlock/compare/1.3.2...1.3.4rc1">https://github.com/gorhill/uBlock/compare/1.3.2...1.3.4rc1</a>
+
+<h2>uBlock Origin 1.3.4rc0 - November 10, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/59c472fd4161cc8123c412df6fd1d36b66282f1a4acaee87cb956c6911263dd6/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.4rc0">https://github.com/gorhill/uBlock/releases/tag/1.3.4rc0</a>
+<br/>&nbsp;
+<br/>Commit history since 1.3.2: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/a661764a4ae17dbf2d4c6ca9a20ccf7c88e3d3ae9c0659c7d05afc5c23ddf493/https%3A//github.com/gorhill/uBlock/compare/1.3.2...1.3.4rc0">https://github.com/gorhill/uBlock/compare/1.3.2...1.3.4rc0</a>
+
+<h2>uBlock Origin 1.3.4b5 - November  7, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/4767d39648201b75d08feb7fcceea5162e75ce46ad3ba055a4d0a4894b3eecf4/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.4b5">https://github.com/gorhill/uBlock/releases/tag/1.3.4b5</a>
+<br/>&nbsp;
+<br/>Commit history since 1.3.2: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/6dc87475de43c6cc76cb755059c4cea3d15adafc37b55a96d7e9e0d2265b1961/https%3A//github.com/gorhill/uBlock/compare/1.3.2...1.3.4b5">https://github.com/gorhill/uBlock/compare/1.3.2...1.3.4b5</a>
+
+<h2>uBlock Origin 1.3.4b4 - November  6, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/fbed4965640c9df829c89e412a77bd29c82f2f81d73d14323a9de85bff0db505/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.4b4">https://github.com/gorhill/uBlock/releases/tag/1.3.4b4</a>
+<br/>&nbsp;
+<br/>Commit history since 1.3.2: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/4e3a6740fdd632a51a8ad466028fc32086dd606aacd10f38f8750dc7fae9b8c0/https%3A//github.com/gorhill/uBlock/compare/1.3.2...1.3.4b4">https://github.com/gorhill/uBlock/compare/1.3.2...1.3.4b4</a>
+
+<h2>uBlock Origin 1.3.4b3 - November  5, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/933c8e59783a0cc0765e62841fd990a426190e86ab775f41f627317adf12493e/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.4b3">https://github.com/gorhill/uBlock/releases/tag/1.3.4b3</a>
+<br/>&nbsp;
+<br/>Commit history since 1.3.2: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/ff9ffbf17965477c1d898d736c52c4bce012a810cf2b1917635770a08cbda51e/https%3A//github.com/gorhill/uBlock/compare/1.3.2...1.3.4b3">https://github.com/gorhill/uBlock/compare/1.3.2...1.3.4b3</a>
+
+<h2>uBlock Origin 1.3.4b2 - November  3, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/4e67de5a882685984a21880234685b902515837bfd643d7bf0a135a0ce10876f/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.4b2">https://github.com/gorhill/uBlock/releases/tag/1.3.4b2</a>
+<br/>&nbsp;
+<br/>Commit history since 1.3.2: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/c0d7eabb22dc1ab1e8617708059e594f2062a04f60b9edd43e9edcb1ed3381fa/https%3A//github.com/gorhill/uBlock/compare/1.3.2...1.3.4b2">https://github.com/gorhill/uBlock/compare/1.3.2...1.3.4b2</a>
+
+<h2>uBlock Origin 1.3.3b2 - October 30, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/b68fa86663c214b5428a894f4dc119ece1d466602ee24380452df10d2da14a11/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.3b2">https://github.com/gorhill/uBlock/releases/tag/1.3.3b2</a>
+<br/>&nbsp;
+<br/>Commit history since 1.3.2: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/5498014aec39fe9a4104a6aa24dc951b44f96719163c1b50b07477317c9ce109/https%3A//github.com/gorhill/uBlock/compare/1.3.2...1.3.3b2">https://github.com/gorhill/uBlock/compare/1.3.2...1.3.3b2</a>
+
+<h2>uBlock Origin 1.3.3b1 - October 28, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/53fd25365c4230ab5535e2ba450f7c7a5148eb8864a640753444d5e82471f486/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.3b1">https://github.com/gorhill/uBlock/releases/tag/1.3.3b1</a>
+<br/>&nbsp;
+<br/>Commit history since 1.3.2: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/80f8720070be7ddd4f59aa8961961a3f91b9ff31ac6df5a21b9449897dad8142/https%3A//github.com/gorhill/uBlock/compare/1.3.2...1.3.3b1">https://github.com/gorhill/uBlock/compare/1.3.2...1.3.3b1</a>
+
+<h2>uBlock Origin 1.3.2 - October 28, 2015</h2>
+Summary of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/b73bb5e4101a51572bd96e56acebadb16d8fc4684f13c37c24df7975c35fffad/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.2">changes</a>:
+<br/>&nbsp;
+<br/><b>Issues closed as fixed:</b>
+<br/>&nbsp;
+<br/><ul><li>[Pale Moon/SeaMonkey] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/72411ba0ca92f705c5c75b795e430ad65eead6c0a4178e4167c5d04376b16a96/https%3A//github.com/gorhill/uMatrix/issues/357">[uBlock Origin] icon only available in one browser window when auto-restoring multi-window session</a>
+<br/>    <ul>    <li>Thanks to <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/8713546dd42e4e4ab135a6a02bb9d372a2891206d96f5c9e84be7c9f7eaaba61/https%3A//github.com/DjogaRo">@DjogaRo</a> for having patiently investigated the root cause of the issue.
+<br/>    </li></ul></li><li>[Pale Moon/SeaMonkey] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/51d0779d436a068f36853ff7e078db693764fde01a7f93cbf626563bd2bae4de/https%3A//github.com/gorhill/uBlock/issues/381">uBlock duplicate icon on Context menu</a></li><li>[Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/a0cfe68899e573dd03dd42955bd18bcb041aa725c449d6bee07ad4bc30d1a133/https%3A//github.com/gorhill/uBlock/issues/852">Clicking URLs in Chrome Full History bypasses uBlock Origin</a></li></ul>
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/f1aaa5c4a8a388deaccea79619932954331917a03fe822552ff4cb7ee0b5be6a/https%3A//github.com/gorhill/uBlock/compare/1.3.1...1.3.2">Commit history between 1.3.1 and 1.3.2</a>
+
+<h2>uBlock Origin 1.3.2rc4 - October 26, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/24c89d3c7111451139e675b01e286e004d7273a2eec690f28468e3ec9143b693/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.2rc4">https://github.com/gorhill/uBlock/releases/tag/1.3.2rc4</a>
+<br/>&nbsp;
+<br/>Commit history since 1.3.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/6088b40f4de92b01c3552f203478ce3150e4f50382262830417b42c0e18cee2c/https%3A//github.com/gorhill/uBlock/compare/1.3.0...1.3.2rc4">https://github.com/gorhill/uBlock/compare/1.3.0...1.3.2rc4</a>
+
+<h2>uBlock Origin 1.3.2rc3 - October 25, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/8bd22a753490b0bd3a038b884d19abdf6252439e1add38107f3904cf8478299b/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.2rc3">https://github.com/gorhill/uBlock/releases/tag/1.3.2rc3</a>
+<br/>&nbsp;
+<br/>Commit history since 1.3.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/21e3bd62cdad09f0f7af9df1e3867d5d84a37883bdc688032461b90afa75a987/https%3A//github.com/gorhill/uBlock/compare/1.3.0...1.3.2rc3">https://github.com/gorhill/uBlock/compare/1.3.0...1.3.2rc3</a>
+
+<h2>uBlock Origin 1.3.2rc1 - October 23, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/4a7f61f519b450c7f9b5b58d8382d052dddfffc836109de327d6dd1d9fc262a4/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.2rc1">https://github.com/gorhill/uBlock/releases/tag/1.3.2rc1</a>
+<br/>&nbsp;
+<br/>Commit history since 1.3.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/673294e1524ee63cb885da2003393ba0b8b2140b17e2d685721b2e726ec168a3/https%3A//github.com/gorhill/uBlock/compare/1.3.0...1.3.2rc1">https://github.com/gorhill/uBlock/compare/1.3.0...1.3.2rc1</a>
+
+<h2>uBlock Origin 1.3.2b6 - October 22, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/65cb537b29f5c18a7bf9006a0a43764562a7e45f2369212b2222823148a7576c/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.2b6">https://github.com/gorhill/uBlock/releases/tag/1.3.2b6</a>
+<br/>&nbsp;
+<br/>Commit history since 1.3.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/78f504256d571b4501e0e0da8cf6276001ccead3bd9f0a0050aa5a67e3568402/https%3A//github.com/gorhill/uBlock/compare/1.3.0...1.3.2b6">https://github.com/gorhill/uBlock/compare/1.3.0...1.3.2b6</a>
+
+<h2>uBlock Origin 1.3.2b5 - October 22, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/95b78885fda341e0215c318c78de95ea9fe3125c7281bedbe9a6ad8b2b6a2840/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.2b5">https://github.com/gorhill/uBlock/releases/tag/1.3.2b5</a>
+<br/>&nbsp;
+<br/>Commit history since 1.3.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/e8e0703d191f18f8901d39dd3e1a3f523e581f0aaf3fdd4c319894514be8f88b/https%3A//github.com/gorhill/uBlock/compare/1.3.0...1.3.2b5">https://github.com/gorhill/uBlock/compare/1.3.0...1.3.2b5</a>
+
+<h2>uBlock Origin 1.3.1 - October 20, 2015</h2>
+Summary of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/f3c091738d6df8933e8790fa368a1b5bf66e5357733a203f35cccdb7f411dd8e/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.1">changes</a>:
+<br/>&nbsp;
+<br/><b>Issues closed as fixed:</b>
+<br/>&nbsp;
+<br/><ul><li><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/aeb21966d6d43741da0807f22b0a58dafe9e202ace88b8dfd27b04c249a23583/https%3A//github.com/gorhill/uBlock/issues/845">AMO reviewer feedback: fix "Security Error: Content at moz-nullprincipal:" warnings in dev console</a></li></ul>
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/f1752dbae9b5a8d63847d076b4173b66e9c6eb445ff41d3b35a8b0a988db49e9/https%3A//github.com/gorhill/uBlock/compare/1.3.0...1.3.1">Commit history between 1.3.0 and 1.3.1</a>
+
+<h2>uBlock Origin 1.3.1rc2 - October 20, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/7e27864f4817640f847e4862d2a9c4022f0f4d312877d4ff229a3d576662a5c7/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.1rc2">https://github.com/gorhill/uBlock/releases/tag/1.3.1rc2</a>
+<br/>&nbsp;
+<br/>Commit history since 1.3.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/bc448d5508a63a521cac4ef337f8aa94ba983366a50da7de22eec55dbfa1005d/https%3A//github.com/gorhill/uBlock/compare/1.3.0...1.3.1rc2">https://github.com/gorhill/uBlock/compare/1.3.0...1.3.1rc2</a>
+
+<h2>uBlock Origin 1.3.1rc1 - October 19, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/bd0f003904f5247ff1a37e21693b0487a5ded1f0554b198791d786d8381e19c2/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.1rc1">https://github.com/gorhill/uBlock/releases/tag/1.3.1rc1</a>
+<br/>&nbsp;
+<br/>Commit history since 1.3.0: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/5e599e4c6a14d65bb7ae8f818cd8a81f84ba06a222aa1868ea4fff636e7768af/https%3A//github.com/gorhill/uBlock/compare/1.3.0...1.3.1rc1">https://github.com/gorhill/uBlock/compare/1.3.0...1.3.1rc1</a>
+
+<h2>uBlock Origin 1.3.0 - October 19, 2015</h2>
+Summary of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/ccd1a6258cbf9cbef39b1931306d86ee12483e740cf3415bb0ca1bbb50f0dd6e/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.0">changes</a>:
+<br/>&nbsp;
+<br/><b>New:</b>
+<br/>&nbsp;
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/67d8e203b57fbf65f137512128c6cf1c1407fe99965f0e1f828348ff90da603c/https%3A//github.com/gorhill/uBlock/pull/801">Basic support for Thunderbird</a>, contributed by <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/8e27a4fed65a7211e96f97df16431d4bc62dce3f055008c83f6e8e97476dcefa/https%3A//github.com/M-Reimer">@M-Reimer</a>
+<br/>&nbsp;
+<br/><b>Issues closed as fixed:</b>
+<br/>&nbsp;
+<br/><ul><li>[Firefox] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/9715be5d81c86a0e2980ccff155d09b72023b317828a317d6b85967dce1573ee/https%3A//github.com/gorhill/uBlock/issues/820">uBlock disabled on first unloaded tab on the left</a></li><li>[Firefox] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/d1443f7378c4e0fe03b2f912b8cc6e98cc9ba813625cb2d39078cf25eef23cc2/https%3A//github.com/gorhill/uBlock/issues/763">Missing icon on toolbar not in Customize</a></li><li>[Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/04fb400a1e8e68d0399b0c8f3c911b557ec1103719d095dbf03f7e833fc69452/https%3A//github.com/gorhill/uBlock/issues/835">Logger shows wrong filter lists when clicked on a filter</a></li><li>[Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/d2fe27010856a54e540bf39413a34fdfc007e263d631067dbd5cf436946b6e52/https%3A//github.com/gorhill/uBlock/issues/760">uBlock filters not updating automatically after purge all caches</a></li><li>[Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/db710470aba9b566eff4dad7fb4f9f17b45bf3eda6eb68c2468383d83549a997/https%3A//github.com/gorhill/uBlock/issues/99">Pop unders</a></li></ul>
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/49c69e5ba71bfa6d92829ac8a2d2c4a66d2714ddc660390314bd5f3bb857c741/https%3A//github.com/gorhill/uBlock/compare/1.2.1...1.3.0">Commit history between 1.2.1 and 1.3.0</a>
+
+<h2>uBlock Origin 1.3.0rc4 - October 17, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/5b10727b9759676e8c9a3a4f4449ae5d28fce10267807ff195df35a56d7627b8/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.0rc4">https://github.com/gorhill/uBlock/releases/tag/1.3.0rc4</a>
+<br/>&nbsp;
+<br/>Commit history since 1.2.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/a6161587d4bf7152bdddddf235390939115bdd8256ea7043ad5514e29357a319/https%3A//github.com/gorhill/uBlock/compare/1.2.1...1.3.0rc4">https://github.com/gorhill/uBlock/compare/1.2.1...1.3.0rc4</a>
+
+<h2>uBlock Origin 1.3.0rc3 - October 17, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/42f442f7fc816c2ed3f5ab5a914e4db7526200aa84ba1a4221f444e87352cde5/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.0rc3">https://github.com/gorhill/uBlock/releases/tag/1.3.0rc3</a>
+<br/>&nbsp;
+<br/>Commit history since 1.2.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/91223eeefbff391d6044c8f02c6f2479a382152783e82ac8efd42c56370481df/https%3A//github.com/gorhill/uBlock/compare/1.2.1...1.3.0rc3">https://github.com/gorhill/uBlock/compare/1.2.1...1.3.0rc3</a>
+
+<h2>uBlock Origin 1.3.0rc2 - October 16, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/18c5a0730a42d1a64b59f80000a43de1b8d28e1bd0da50757578eccc72bc8676/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.0rc2">https://github.com/gorhill/uBlock/releases/tag/1.3.0rc2</a>
+<br/>&nbsp;
+<br/>Commit history since 1.2.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/8b08ad26fc517a7842db13be3273ea7991afb3ada0c7f2f7d2faeeb21f8bcca5/https%3A//github.com/gorhill/uBlock/compare/1.2.1...1.3.0rc2">https://github.com/gorhill/uBlock/compare/1.2.1...1.3.0rc2</a>
+
+<h2>uBlock Origin 1.3.0rc1 - October 15, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/11ed96e798e5f7a2beab0978c05c7082c809edae475a0b2a784d91db0d00e5ab/https%3A//github.com/gorhill/uBlock/releases/tag/1.3.0rc1">https://github.com/gorhill/uBlock/releases/tag/1.3.0rc1</a>
+<br/>&nbsp;
+<br/>Commit history since 1.2.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/b29077585d551f0555382270ce13aaa70674cbbb8ee1719ec840e52577f5b176/https%3A//github.com/gorhill/uBlock/compare/1.2.1...1.3.0rc1">https://github.com/gorhill/uBlock/compare/1.2.1...1.3.0rc1</a>
+
+<h2>uBlock Origin 1.2.2b4 - October 14, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/203da3ee0f93288992f295358c62193927afcd7b5235938ab21a81c59996e25f/https%3A//github.com/gorhill/uBlock/releases/tag/1.2.2b4">https://github.com/gorhill/uBlock/releases/tag/1.2.2b4</a>
+<br/>&nbsp;
+<br/>Commit history since 1.2.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/402c6a80db6426e6c7da9e7cbb356fbd6a619be28ab9ca3ac4e9e115d52e26a5/https%3A//github.com/gorhill/uBlock/compare/1.2.1...1.2.2b4">https://github.com/gorhill/uBlock/compare/1.2.1...1.2.2b4</a>
+
+<h2>uBlock Origin 1.2.2b3 - October 13, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/aa2266670c308c938d7b083abdbe8d92e069976d1eace3e63f4eb8ba01b6875d/https%3A//github.com/gorhill/uBlock/releases/tag/1.2.2b3">https://github.com/gorhill/uBlock/releases/tag/1.2.2b3</a>
+<br/>&nbsp;
+<br/>Commit history since 1.2.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/c0cc11e50a4b45d97adf66ca5e69c17a9635228e39a5aeb715e3eb11c9cd919d/https%3A//github.com/gorhill/uBlock/compare/1.2.1...1.2.2b3">https://github.com/gorhill/uBlock/compare/1.2.1...1.2.2b3</a>
+
+<h2>uBlock Origin 1.2.2b2 - October  9, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/e8b9c869f2be09058378d7da9f926376930df5b2bf397145bf80d8a0dbeb888c/https%3A//github.com/gorhill/uBlock/releases/tag/1.2.2b2">https://github.com/gorhill/uBlock/releases/tag/1.2.2b2</a>
+<br/>&nbsp;
+<br/>Commit history since 1.2.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/38cd72e67fa9393c5f8c0fb0d0f38decae41f4fd41a137e27f454796a1203fee/https%3A//github.com/gorhill/uBlock/compare/1.2.1...1.2.2b2">https://github.com/gorhill/uBlock/compare/1.2.1...1.2.2b2</a>
+
+<h2>uBlock Origin 1.2.2b1 - October  9, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/d95f39c88ba4546e6735a394f3831ec98d816cd01dd6ebe5b75588358a6b7160/https%3A//github.com/gorhill/uBlock/releases/tag/1.2.2b1">https://github.com/gorhill/uBlock/releases/tag/1.2.2b1</a>
+<br/>&nbsp;
+<br/>Commit history since 1.2.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/143610f519116fe5d0df04c25caadd2d8addfeda43db44890e5434c00225316c/https%3A//github.com/gorhill/uBlock/compare/1.2.1...1.2.2b1">https://github.com/gorhill/uBlock/compare/1.2.1...1.2.2b1</a>
+
+<h2>uBlock Origin 1.2.1 - October  8, 2015</h2>
+Summary of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/a6250cc6f2dd7c60f00f4f795b1a344cd39987165feae93b15b49d2937ce6506/https%3A//github.com/gorhill/uBlock/releases/tag/1.2.1">changes</a>:
+<br/>&nbsp;
+<br/><b>Issues closed as fixed:</b>
+<br/>&nbsp;
+<br/>- [Firefox Nightly] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/11abfdb66635ad90461300b340742cbf6b2062c887f00d8c3ea490ccbcc176cf/https%3A//github.com/gorhill/uBlock/issues/800">TypeError: LocationChangeListener is not a constructor</a>
+<br/>&nbsp;
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/f85c04f4226c7399773350b18910806dcb949b90d2c352bb623ca84d91fc970e/https%3A//github.com/gorhill/uBlock/compare/1.2.0...1.2.1">Commit history between 1.2.0 and 1.2.1</a>
+
+<h2>uBlock Origin 1.2.0 - October  7, 2015</h2>
+Summary of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/464f7ddfdb01301bc3704fc09150e7bc71828d38d78d7165032bf59f2a5c9ec5/https%3A//github.com/gorhill/uBlock/releases/tag/1.2.0">changes</a>:
+<br/>&nbsp;
+<br/><b>New stuff &amp; changes:</b>
+<br/>&nbsp;
+<br/>New cosmetic filter to foil specific inline script tags -- one more tool in uBlock Origin's arsenal against bloat. Documentation for this new cosmetic filter: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/ca966914f199361f06df0f4fbfc9182c0644cc6cabc8c7852968b38110a8bd9d/https%3A//github.com/gorhill/uBlock/wiki/Inline-script-tag-filtering">Inline script tag filtering</a>.
+<br/>&nbsp;
+<br/><b>Issues closed as fixed:</b>
+<br/>&nbsp;
+<br/>- [Chromium] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/7ec748733ecf9757a51819e476d563ccbfa7cef8232863993fb38bcaea72da82/https%3A//github.com/gorhill/uBlock/issues/762">Impossible to block ad</a>
+<br/>- [Firefox] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/9395e7b06c7c6b2e776aa5a0eb13e98fcdfc5c0f9f0e43cfa1711a43342993ff/https%3A//github.com/gorhill/uBlock/issues/640">Global uBlock installation on Ubuntu</a>
+<br/>- [Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/9086249a3ab6b4a4d4b2450c5474ed1c7eb4b9d7462e8795c6e6a1d4ea78156f/https%3A//github.com/gorhill/uBlock/issues/773">Create landing pages in the wiki for features with caveats</a>
+<br/>- [Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/fe621f9accca951c652736bc7a0d72057c4c5adfd79918bdf3fd5c8b426284bb/https%3A//github.com/gorhill/uBlock/issues/695">Can we have link to docs under My Filters tab?</a>
+<br/>- [Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/a4c90eeb55476a151b300d8e4ee292b735a96d204f7b638bfc5a52cd17f40bcd/https%3A//github.com/gorhill/uBlock/issues/540">Site loading constantly with uBlock: eg. AdFox, AdRiver, Magna problem</a>
+<br/>&nbsp;
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/4d11b0a43d98b784258c4cc6c1c019658af7dfef21bbd9f863c32e3e7543c5f2/https%3A//github.com/gorhill/uBlock/compare/1.1.1...1.2.0">Commit history between 1.1.1 and 1.2.0</a>
+
+<h2>uBlock Origin 1.2.0rc2 - October  6, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/9ed76a4608472a9f199cc9bee3711e33a499b7d5a18077929c71383f32ed8f8a/https%3A//github.com/gorhill/uBlock/releases/tag/1.2.0rc2">https://github.com/gorhill/uBlock/releases/tag/1.2.0rc2</a>
+<br/>&nbsp;
+<br/>Commit history since 1.1.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/c071ab3c3af652bc2df5153c32f4ad67ce1801c4c7a0de7fddcff071f24c939e/https%3A//github.com/gorhill/uBlock/compare/1.1.1...1.2.0rc2">https://github.com/gorhill/uBlock/compare/1.1.1...1.2.0rc2</a>
+
+<h2>uBlock Origin 1.2.0rc1 - October  5, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/6a7e0e7978002ca45d07dfbf562b015393b67f384af02909cb297ff133143981/https%3A//github.com/gorhill/uBlock/releases/tag/1.2.0rc1">https://github.com/gorhill/uBlock/releases/tag/1.2.0rc1</a>
+<br/>&nbsp;
+<br/>Commit history since 1.1.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/dcbb1c6099f28f0edde8391bd32c9b8826d94360e6d261b07c9f23e291298bd0/https%3A//github.com/gorhill/uBlock/compare/1.1.1...1.2.0rc1">https://github.com/gorhill/uBlock/compare/1.1.1...1.2.0rc1</a>
+
+<h2>uBlock Origin 1.1.2b4 - September 30, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/25a993a3bd756fc07a699249f64fa06b54c276dd1b3709f34916f2f248d23d44/https%3A//github.com/gorhill/uBlock/releases/tag/1.1.2b4">https://github.com/gorhill/uBlock/releases/tag/1.1.2b4</a>
+<br/>&nbsp;
+<br/>Commit history since 1.1.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/b19df3dc0c5aafc0958d45d1f3d4b775e3c00db946dfa9e8e155396a82965319/https%3A//github.com/gorhill/uBlock/compare/1.1.1...1.1.2b4">https://github.com/gorhill/uBlock/compare/1.1.1...1.1.2b4</a>
+
+<h2>uBlock Origin 1.1.2b3 - September 27, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/058d3a3847e8e26ce86133ba4ae88882eccd4e321d734a93b7d50b2938960c6d/https%3A//github.com/gorhill/uBlock/releases/tag/1.1.1b3">https://github.com/gorhill/uBlock/releases/tag/1.1.1b3</a>
+<br/>&nbsp;
+<br/>Commit history since 1.1.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/c5464d98df5a658d9d550ff6952ece5181d03fbb98ad4af9d872d353183163b7/https%3A//github.com/gorhill/uBlock/compare/1.1.1...1.1.1b3">https://github.com/gorhill/uBlock/compare/1.1.1...1.1.1b3</a>
+
+<h2>uBlock Origin 1.1.2b2 - September 26, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/390ca2f04e4cae0cb7a0935754a094b9904724632ba74997a9aeffaf5a9271a5/https%3A//github.com/gorhill/uBlock/releases/tag/1.1.1b2">https://github.com/gorhill/uBlock/releases/tag/1.1.1b2</a>
+<br/>&nbsp;
+<br/>Commit history since 1.1.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/da3eb1d3043698e649d728398df6c7b90a033b2ac8256e1275c5de0b9b7a1ebe/https%3A//github.com/gorhill/uBlock/compare/1.1.1...1.1.1b2">https://github.com/gorhill/uBlock/compare/1.1.1...1.1.1b2</a>
+
+<h2>uBlock Origin 1.1.1 - September 16, 2015</h2>
+Summary of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/a3d4ce9fe11ed4d5f2512688b59e28c8b956f8c29fc7c256af81215aed0721e9/https%3A//github.com/gorhill/uBlock/releases/tag/1.1.1">changes</a>:
+<br/>&nbsp;
+<br/><b>Notes:</b>
+<br/>&nbsp;
+<br/>Given that uBlock Origin has moved to and beyond version 1.0, I will from now on use a 3-sequence version scheme.
+<br/>&nbsp;
+<br/><b>New stuff &amp; changes:</b>
+<br/>&nbsp;
+<br/>Basque translation by <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/b4829c08d905aa9a699e624f1e16a5065d14ac559622805f1ce7a2fc0811013f/https%3A//crowdin.com/profile/Osoitz">Osoitz</a>.
+<br/>&nbsp;
+<br/><i>Strict blocking</i> page will now allow you to "parse" the blocked URL to make deciphering its content, if any, more user friendly, something which may be useful when making a decision whether or not to load the target URL. When a blocked URL contains parameters, a magnifier will be available on the bottom-right corner. Click on it to see the <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/877ec48df3ecbf55dd118edae93753bbbb726182d7107f0a0ce105ba076fce6e/https%3A//cloud.githubusercontent.com/assets/585534/9832014/bfb1b8f0-593b-11e5-8a27-fba472a5529a.png">deciphered content</a>.
+<br/>&nbsp;
+<br/><b>Issues closed as fixed:</b>
+<br/>&nbsp;
+<br/>- [Chromium] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/eb41a9accc6432949d8f1fabbe86d6e5e20a6b8913f2c90c09f13309f17878ca/https%3A//github.com/gorhill/uBlock/issues/44">Block Popups blocks "Open in New Tab" on some sites</a>
+<br/>- [Firefox] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/0587e5028d6682f91db1ea84672041f9bf6fe5015de1048dd1ebf9d43239199d/https%3A//github.com/gorhill/uBlock/issues/697">Don't show "restore_on_demand" tabs in logger UI</a>
+<br/>- [Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/9a3b64592b3bd1a2e7ea637315d01618318daa912d8fda1349313d1f740aeec3/https%3A//github.com/gorhill/uBlock/issues/711">[Performance] Revisit cosmetic filtering's FilterPlain implementation</a>
+<br/>- [Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/e1a63fad75830fce24b251e3b1b7de0f59594c2da70ed99a07be534e38a2a765/https%3A//github.com/gorhill/uBlock/issues/707">Text color</a>
+<br/>- [Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/591ab163b3f6235c79b932af84050a660058b9497e328f968639a6ef48adf5eb/https%3A//github.com/gorhill/uBlock/issues/693">Uncaught SyntaxError: Failed to execute 'querySelector' on 'Document'</a>
+<br/>- [Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/f9cd7e797eac00e7d22b3239f8f4bc9dafa850261d18423759734ec56b60a751/https%3A//github.com/gorhill/uBlock/issues/691">Make target URL in strict blocked referrer clickable</a>
+<br/>- [Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/070f7c768559d3baa453b1abbe9a924d30d657e95e7e3efe8964b64b572c7ecf/https%3A//github.com/gorhill/uBlock/issues/678">Filter list: hpHosts’ Ad and tracking servers</a>
+<br/>- [Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/7d4d2ad2bc1e98906334972dc7cc00dbda2fb7687bd03940f96b6701b0392f22/https%3A//github.com/gorhill/uBlock/issues/672">[Performance] manually extract class tokens</a>
+<br/>&nbsp;
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/fc81c2a0bc84093719fd0d3bf0295d703223f4673b6ec5d4e0d2b17612c52099/https%3A//github.com/gorhill/uBlock/compare/1.1.0.0...1.1.1">Commit history between 1.1.0.0 and 1.1.1</a>
+
+<h2>uBlock Origin 1.1.1rc4 - September 15, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/df79e938b0b4cb1f45f106f940d1c8fd417c12880b566e78923f5cf39c3079c1/https%3A//github.com/gorhill/uBlock/releases/tag/1.1.1rc4">https://github.com/gorhill/uBlock/releases/tag/1.1.1rc4</a>
+<br/>&nbsp;
+<br/>Commit history since 1.0.0.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/08b042e4ec469b8a47cfedd0549f02d4a8decf36c4bf4efc57e89fbdf63ea753/https%3A//github.com/gorhill/uBlock/compare/1.0.0.1...1.1.1rc4">https://github.com/gorhill/uBlock/compare/1.0.0.1...1.1.1rc4</a>
+
+<h2>uBlock Origin 1.1.1rc3 - September 14, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/71edcae876d1c75bcb355bb0e9ec9840569b89edbe09600d16e12016631bb586/https%3A//github.com/gorhill/uBlock/releases/tag/1.1.1rc3">https://github.com/gorhill/uBlock/releases/tag/1.1.1rc3</a>
+<br/>&nbsp;
+<br/>Commit history since 1.0.0.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/7ea75443d9157df843f3033d734f4a174243c6b438d9f2778ca9f47ee97bd609/https%3A//github.com/gorhill/uBlock/compare/1.0.0.1...1.1.1rc3">https://github.com/gorhill/uBlock/compare/1.0.0.1...1.1.1rc3</a>
+
+<h2>uBlock Origin 1.1.1rc2 - September 14, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/82aa10e98270386e567cd8108024ed9920a584a139300e55428fbdf3c4069ea2/https%3A//github.com/gorhill/uBlock/releases/tag/1.1.1rc2">https://github.com/gorhill/uBlock/releases/tag/1.1.1rc2</a>
+<br/>&nbsp;
+<br/>Commit history since 1.0.0.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/5170ded6190c7dbaf8b042ab55adbbbd18d0759497565d117d98a4df2c99f0e9/https%3A//github.com/gorhill/uBlock/compare/1.0.0.1...1.1.1rc2">https://github.com/gorhill/uBlock/compare/1.0.0.1...1.1.1rc2</a>
+
+<h2>uBlock Origin 1.1.1rc1 - September 13, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/18efe3c65cd72790f91a5615c87eb49e944a825c06271481e7fdbd2adedc4533/https%3A//github.com/gorhill/uBlock/releases/tag/1.1.1rc1">https://github.com/gorhill/uBlock/releases/tag/1.1.1rc1</a>
+<br/>&nbsp;
+<br/>Commit history since 1.0.0.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/eb3c6c04f349f0a3e7732c2c8b4e7e17d9ef0e25e6a227d94539a38b54f397e6/https%3A//github.com/gorhill/uBlock/compare/1.0.0.1...1.1.1rc1">https://github.com/gorhill/uBlock/compare/1.0.0.1...1.1.1rc1</a>
+
+<h2>uBlock Origin 1.1.0.2b3 - September 12, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/1428c31a6e977c3d309f47db4226c14d30c0a31791d13694db6726c04e35d7f5/https%3A//github.com/gorhill/uBlock/releases/tag/1.1.0.2b3">https://github.com/gorhill/uBlock/releases/tag/1.1.0.2b3</a>
+<br/>&nbsp;
+<br/>Commit history since 1.0.0.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/c9d57d5debb680040c0fc4955fd89a565145aabfb93d19f1ba652fbbeb86180e/https%3A//github.com/gorhill/uBlock/compare/1.0.0.1...1.1.0.2b3">https://github.com/gorhill/uBlock/compare/1.0.0.1...1.1.0.2b3</a>
+
+<h2>uBlock Origin 1.1.0.2b1 - September 10, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/f44ff543b8a22edcc89ac14520776f2995953a302d86d37ce44fc96dda4a7fd5/https%3A//github.com/gorhill/uBlock/releases/tag/1.1.0.2b1">https://github.com/gorhill/uBlock/releases/tag/1.1.0.2b1</a>
+<br/>&nbsp;
+<br/>Commit history since 1.0.0.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/a6f239d3e6b344c21fa1956befa7435d3377859b754d9f19643bc8afc1aea58d/https%3A//github.com/gorhill/uBlock/compare/1.0.0.1...1.1.0.2b1">https://github.com/gorhill/uBlock/compare/1.0.0.1...1.1.0.2b1</a>
+
+<h2>uBlock Origin 1.1.0.0 - August 30, 2015</h2>
+Summary of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/a598e80393b9c6b0bd6ff64aa3515087d5c9479e7c222ab3449e888ede325612/https%3A//github.com/gorhill/uBlock/releases/tag/1.1.0.0">changes</a>:
+<br/>&nbsp;
+<br/>New stuff &amp; changes:
+<br/>&nbsp;
+<br/>Support for cloud storage. Please read before use: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/78c00a42b6d9bdbe450e92f50a02bff931fb9d8413efacf84cba289464b3501e/https%3A//github.com/gorhill/uBlock/wiki/Cloud-storage">documentation</a> -- keep in mind the Firefox-specific caveats.
+<br/>&nbsp;
+<br/>Dashboard: Revert buttons added for "My filters" and "Whitelist" panes.
+<br/>&nbsp;
+<br/>All non-default 3rd-party filter lists are no longer part of the package. Also, "Filtros Nauscopicos" and "RO-LIST" have been removed from the stock filter lists, as they are apparently no longer maintained, and contain questionable exception filters.
+<br/>&nbsp;
+<br/>"Speculative pre-connections" will now also be disabled when the option "Disable pre-fetching" is checked. Background info: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/b35bb36d1f52c97f49fbaa0ff50cf41a8ac4bebdfe29e8e18c81e06eda067e0a/http%3A//www.ghacks.net/2015/08/16/block-firefox-from-connecting-to-sites-when-you-hover-over-links/">Block Firefox from connecting to sites when you hover over links</a>
+<br/>&nbsp;
+<br/>Issues closed as fixed:
+<br/>&nbsp;
+<br/>- [Firefox] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/73dd360a352d7c7a4edb6224523b254feb720c960100af73f53c8ef0a60a66b2/https%3A//github.com/gorhill/uBlock/issues/654">Entire tab is blocked and history is overriden because of iframe form submit</a>
+<br/>- [Firefox] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/4ce6d920fcde15da05f9cb010388c60eb4afc0c8da5b0ac83c8f40a3b431a393/https%3A//github.com/gorhill/uBlock/issues/574">tabBrowser.tabs is undefined (vapi-background.js:1056)</a>
+<br/>- [Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/9df39d071fe93970dcc2a73afeaf5cffa333bcadc5896a5fc4efbab4b9804d53/https%3A//github.com/chrisaljoudi/uBlock/issues/1528">uBlock doesn't work on XHTML pages (application/xhtml+xml)</a>
+<br/>- [Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/5dec2d90a5afb8d1ab6b9069b866d123f484e46657cd7b31b0a8f0da69e1f4d5/https%3A//github.com/gorhill/uBlock/issues/621">Problem on Yahoo Search Pages</a>
+<br/>- [Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/097331c94ff220effafd30856f4eff1581322c84184f84909f98d771942bca17/https%3A//github.com/gorhill/uBlock/issues/602">Remove from project all filter lists which are not selected by default</a>
+<br/>- [Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/b708fc3d8e67ec8f0d88ec8ce9b9f433e895b710a046a7bbf15fa51960f538d1/https%3A//github.com/gorhill/uBlock/issues/583">Incomplete warning of "badware risks"</a>
+<br/>- [Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/a83c098fbaa5de900df2e13a60dd8dce8fd00a6fd38e17536f4dbd4e7be7ea53/https%3A//github.com/gorhill/uBlock/issues/581">Unable to whitelist a popup request using dynamic filtering - popup closes without control</a>
+<br/>- [Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/ca372912ad3d89619b0c6845c23f289d09b0e6349195cc56363ccb80055d4f87/https%3A//github.com/gorhill/uBlock/issues/570">Rename 'outdated' to 'out of date'</a>
+<br/>- [Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/7c63b195b535e216d619a3fc9df832bda86124de7acf32774e5714af92cc83ae/https%3A//github.com/gorhill/uMatrix/issues/129">Modernize CSP injection code</a>
+<br/>- [Core] <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/b0c95173cdc1db68893e9e6c12e2bb45a587013e6f105339fd20c2a576f90849/https%3A//github.com/gorhill/uBlock/issues/80">Suggestion - Allow syncing through firefox sync</a>
+<br/>&nbsp;
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/b6d134ad859f7acc19744abaceec263ff581a300852631eeb1c24fc3330f795a/https%3A//github.com/gorhill/uBlock/compare/1.0.0.0...1.1.0.0">Commit history between 1.0.0.0 and 1.1.0.0</a>
+
+<h2>uBlock Origin 1.1.0.0rc4 - August 29, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/54b4224ae0e4be40893fe0d5d8272985467aaca5a297ec0b0d23ba35adc862ac/https%3A//github.com/gorhill/uBlock/releases/tag/1.1.0.0rc4">https://github.com/gorhill/uBlock/releases/tag/1.1.0.0rc4</a>
+<br/>&nbsp;
+<br/>Commit history since 1.0.0.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/b19575c763bfe927cdf91c0b29026dbe763b68dff940b5c9fa9293331053aada/https%3A//github.com/gorhill/uBlock/compare/1.0.0.1...1.1.0.0rc4">https://github.com/gorhill/uBlock/compare/1.0.0.1...1.1.0.0rc4</a>
+
+<h2>uBlock Origin 1.1.0.0rc3 - August 28, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/9e94aac4672c70b71c218816a5c5077415fca0e6583a64498f964b79c0d35dfc/https%3A//github.com/gorhill/uBlock/releases/tag/1.1.0.0rc3">https://github.com/gorhill/uBlock/releases/tag/1.1.0.0rc3</a>
+<br/>&nbsp;
+<br/>Commit history since 1.0.0.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/55aa037e7f491302308bc6f87e5d15e58f63f46188939415525d4de590f3182a/https%3A//github.com/gorhill/uBlock/compare/1.0.0.1...1.1.0.0rc3">https://github.com/gorhill/uBlock/compare/1.0.0.1...1.1.0.0rc3</a>
+
+<h2>uBlock Origin 1.1.0.0rc2 - August 26, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/c6a1b74704b770ea9e0df4178f9d1f57e749376a8dfb0b2169234d43340f2877/https%3A//github.com/gorhill/uBlock/releases/tag/1.1.0.0rc2">https://github.com/gorhill/uBlock/releases/tag/1.1.0.0rc2</a>
+<br/>&nbsp;
+<br/>Commit history since 1.0.0.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/be2b92e31ce37aef7d5c89352b179ee466c42268c3ba7e5371fb1aad39d540fa/https%3A//github.com/gorhill/uBlock/compare/1.0.0.1...1.1.0.0rc2">https://github.com/gorhill/uBlock/compare/1.0.0.1...1.1.0.0rc2</a>
+
+<h2>uBlock Origin 1.1.0.0rc1 - August 24, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/9d2270c6a16851eba6d0eef8b516587f7130a7085f8266001a74a9d6b5b11ca7/https%3A//github.com/gorhill/uBlock/releases/tag/1.1.0.0rc1">https://github.com/gorhill/uBlock/releases/tag/1.1.0.0rc1</a>
+<br/>&nbsp;
+<br/>Commit history since 1.0.0.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/f1de8d58811c57aa87cb9848d6256cb590a7976c09edffd9d87e3dc669f2844e/https%3A//github.com/gorhill/uBlock/compare/1.0.0.1...1.1.0.0rc1">https://github.com/gorhill/uBlock/compare/1.0.0.1...1.1.0.0rc1</a>
+
+<h2>uBlock Origin 1.1.0.0b6 - August 22, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/d89dd1b99ff5a3ad65286b65062418044d52140ba799b60ef356bdb01350f573/https%3A//github.com/gorhill/uBlock/releases/tag/1.1.0.0b6">https://github.com/gorhill/uBlock/releases/tag/1.1.0.0b6</a>
+<br/>&nbsp;
+<br/>Commit history since 1.0.0.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/b603be4c9c0c5e935efab4bfd3c96773ca4a1589dd7a4a3bb415004ca7338e32/https%3A//github.com/gorhill/uBlock/compare/1.0.0.1...1.1.0.0b6">https://github.com/gorhill/uBlock/compare/1.0.0.1...1.1.0.0b6</a>
+
+<h2>uBlock Origin 1.1.0.0b5 - August 21, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/c548a0acae13d6075dea010575eded4973cd7d81c91e826e393327b11434e3bf/https%3A//github.com/gorhill/uBlock/releases/tag/1.1.0.0b5">https://github.com/gorhill/uBlock/releases/tag/1.1.0.0b5</a>
+<br/>&nbsp;
+<br/>Commit history since 1.0.0.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/d8f376f6cfcc342bb3d49dda878d67f90be163b273afe265fb500ba569236ed3/https%3A//github.com/gorhill/uBlock/compare/1.0.0.1...1.1.0.0b5">https://github.com/gorhill/uBlock/compare/1.0.0.1...1.1.0.0b5</a>
+
+<h2>uBlock Origin 1.1.0.0b4 - August 20, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/dd32d09a9e369364506e7394f9d007cdd14f3f0cacbffa02f975070fc3eba483/https%3A//github.com/gorhill/uBlock/releases/tag/1.1.0.0b4">https://github.com/gorhill/uBlock/releases/tag/1.1.0.0b4</a>
+<br/>&nbsp;
+<br/>Commit history since 1.0.0.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/4da00d48660a2a66f74bd49b3c71ab05b6573e2b5ade2918538b776235a879fd/https%3A//github.com/gorhill/uBlock/compare/1.0.0.1...1.1.0.0b4">https://github.com/gorhill/uBlock/compare/1.0.0.1...1.1.0.0b4</a>
+
+<h2>uBlock Origin 1.1.0.0b3 - August 15, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/3dd617600514bd1b49f17d9cf5a95156ed734f499f208a373f557543db4888a6/https%3A//github.com/gorhill/uBlock/releases/tag/1.1.0.0b3">https://github.com/gorhill/uBlock/releases/tag/1.1.0.0b3</a>
+<br/>&nbsp;
+<br/>Commit history since 1.0.0.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/0b7698c29b500ac7c0cd7cbb6775c6fe5dd1c19d93ea19ca717a92e208730966/https%3A//github.com/gorhill/uBlock/compare/1.0.0.1...1.1.0.0b3">https://github.com/gorhill/uBlock/compare/1.0.0.1...1.1.0.0b3</a>
+
+<h2>uBlock Origin 1.1.0.0b2 - August 14, 2015</h2>
+Release notes: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/4be42e2d7d501c1ac0c66ad73f75764d1fa1a45900c8ea82eb80e9307cd4daca/https%3A//github.com/gorhill/uBlock/releases/tag/1.1.0.0b2">https://github.com/gorhill/uBlock/releases/tag/1.1.0.0b2</a>
+<br/>&nbsp;
+<br/>Commit history since 1.0.0.1: <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/59ba4a7a91595cfacdaa1d867ecebb22fe3c94708f961be74326fe892bd8edd0/https%3A//github.com/gorhill/uBlock/compare/1.0.0.1...1.1.0.0b2">https://github.com/gorhill/uBlock/compare/1.0.0.1...1.1.0.0b2</a>
+
+<h2>uBlock Origin 1.1.0.0b1 - August 12, 2015</h2>
+Latest details on the <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/de148deb19b52874eb4c5726859834f3294a6057ed44e873c958acee4c920062/https%3A//github.com/gorhill/uBlock/releases"><i>Releases</i> page</a> on GitHub.
+
+<h2>uBlock Origin 1.0.0.1 - August  4, 2015</h2>
+Summary of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/e1fae5eaf5072d07b678b615a87e0ffd90d1cb1dcbbc5ef9da3adf5433046e3e/https%3A//github.com/gorhill/uBlock/releases/tag/1.0.0.1">changes</a>:
+<br/>&nbsp;
+<br/>New:
+<br/>&nbsp;
+<br/>Ability for administrators to deploy uBlock Origin with custom settings (<a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/7558a7eb4072b3652322f6b0654271361305920769aac693670b41138f621078/https%3A//github.com/gorhill/uBlock/issues/531">issue #531</a>). It's rather experimental at this point, and feedback from admins will decide how this evolves, as I do not have a way to test this with real cases.
+<br/>&nbsp;
+<br/>For Firefox, use extensions.ublock0.adminSettings in about:config <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/810f4e37ab6cc3182afc92a931f9d08ca667d1e13930099e9cbffe311d183f6e/https%3A//github.com/gorhill/uBlock/issues/531%23issuecomment-125221801">to overwrite whatever user settings</a>. I am still waiting for feedback to further fine tune this feature.
+<br/>&nbsp;
+<br/>Fixes:
+<br/>&nbsp;
+<br/>- <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/f59444db2b7d969ca596da00b1119ada6899e6655d5962525ccd8d26d70ace82/https%3A//github.com/gorhill/uBlock/pull/555">try/catch createShadowRoot in contentscripts</a>
+<br/>- <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/dfaded5ea1ab4dea7427a289377e378cade018786cb933060ebc771e62b5d7bd/https%3A//github.com/gorhill/uBlock/issues/546">DOM inspector broken because Element.matches not supported</a> (Firefox 33 and less)
+<br/>- <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/f3efc329368623abae94e06116392b87cb3f78bd9dd51d3ecaa1b7a888bec4e0/https%3A//github.com/gorhill/uBlock/issues/536">Doesn't show which custom list contains this filter</a>
+<br/>- <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/9600c139d222d8c223aac8d69063930a6a312212a112bca4b156db7ea3c0edc3/https%3A//github.com/gorhill/uBlock/issues/512">New Logger Tab / Windows - Output incorrectly formatted within Palemoon 25.5.0</a> (Firefox 25 and less also)
+<br/>- <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/bb07942ec743b3b79162f7dc53c212157bbf131944bdaee6c4dd20caac979a58/https%3A//github.com/gorhill/uBlock/issues/507">[Enhancement] Automatically select the tab it was opened from when opening the Logger</a>
+<br/>&nbsp;
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/764dd49a64c8a2ba3622d5df71a1a43a8404bf9c7dffbd84e26e870cc9757a7c/https%3A//github.com/gorhill/uBlock/compare/1.0.0.0...1.0.0.1">Commit history between 1.0.0.0 and 1.0.0.1</a>
+
+<h2>uBlock Origin 1.0.0.0 - July 18, 2015</h2>
+Summary of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/94575df1adae3cfa23442467d3ba501ef6b86abd3477e7d8fbc1bda553ba1faa/https%3A//github.com/gorhill/uBlock/releases/tag/1.0.0.0">changes</a>:
+<br/>&nbsp;
+<br/>New:
+<br/>&nbsp;
+<br/>- <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/f0de4c172aadc3b3e7bab7e25e7b56556d0582663c54154a54839e5dc2a21cbe/https%3A//crowdin.com/project/ublock/bn">Bengali translation</a> by <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/9f7f03f5246604342d85046ce799d392e22ef5b6113ee8341075647e0f0940d1/https%3A//crowdin.com/profile/Leemon2010">Leemon2010</a>.
+<br/>- <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/ddfeed15f982dde6e532d0d408735744d5b083519fe6769eb31b9f4a0b55e556/https%3A//crowdin.com/project/ublock/ta">Tamil translation</a> by <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/1bfc832186e52a3d3564aaa37db115f5d0a0a887d8f3194aede30205c8e727ce/https%3A//crowdin.com/profile/albertalbs">albertalbs</a>.
+<br/>- <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/21ec121bb891831df6f7a8c914fe7151204f9955e99600006fc6df9310a6c95f/https%3A//github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web">New wiki page</a> for easy subscription to a choice of filter lists.
+<br/>- You can open the logger in its own separate window when opened from the popup UI with the Shift key pressed.
+<br/>- Ability to strict-block using finer-grained filters, rather than just whole sites.
+<br/>- New logger tool: DOM inspector, to assist in the creation of cosmetic filters, cosmetic exception filters.
+<br/>&nbsp;
+<br/>Fixes:
+<br/>&nbsp;
+<br/>- <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/2835d07e9b97dda022173e7d4d03651d4f46785549c00650d599812bf94ed73d/https%3A//github.com/gorhill/uBlock/issues/476">Dynamic URL Filtering noop rules not reflected on Dynamic Filtering UI</a>
+<br/>- <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/b52efcb52b09e03ea606cf88152ed5e37895f37b783e66c6af1004d45278c71e/https%3A//github.com/gorhill/uBlock/issues/470">Firefox option issue</a>
+<br/>- <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/64dc69bb0b2e75fa5bc2a6781f62e35f981d8fd81f08b81d7467c3d63c8e1e2e/https%3A//github.com/gorhill/uBlock/issues/454">logger-ui bug aero transparency</a>
+<br/>- <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/82f58b23af413dd104e63737a0eff35216916ee92b38187f2f965becfe40e698/https%3A//github.com/gorhill/uBlock/issues/452">Popup identified as "doc" request when opened by iframe</a>
+<br/>- <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/92443a18e9071c9ac69d7715d4c753826cef0ae4d7b3c8432c3a4ef74c594a85/https%3A//github.com/gorhill/uBlock/issues/450">uBlock does not block popup anymore under a rare circumstance</a>
+<br/>- <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/45c2f29c7201e6e27215ee46f1ff22538cf115189793675e5a16bbde1f313c64/https%3A//github.com/gorhill/uBlock/issues/435">Logger does not report [style="..."]</a>
+<br/>- <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/0d7efba30c2b444fb5f133880dc11d29523241e20401f16b8f94703a424ef535/https%3A//github.com/gorhill/uBlock/issues/192">Url Blocking Issue</a>
+<br/>&nbsp;
+<br/>&nbsp;
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/1500dc2997f417a763ed7f9f3f7c20da45c291b630c1534e618b3b54ab181aef/https%3A//github.com/gorhill/uBlock/compare/0.9.9.3...1.0.0.0">Commit history between 0.9.9.3 and 1.0.0.0</a>
+
+<h2>uBlock Origin 0.9.9.3 - July  4, 2015</h2>
+Summary of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/f732cf442dc69809fe905cdec915b9bbc21d6d1a670a8c058e405d089bd9a94e/https%3A//github.com/gorhill/uBlock/releases/tag/0.9.9.3">changes</a>:
+<br/>&nbsp;
+<br/>New:
+<br/>&nbsp;
+<br/>- <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/c9176e0045a638c2815ff14d777d4adac69f65ff49a744bb62b774d27e74aa5d/https%3A//github.com/gorhill/uBlock/wiki/Dashboard%3A-Settings%23prevent-webrtc-from-leaking-local-ip-address">Privacy setting: ability to prevent local IP address leak through WebRTC</a>
+<br/>&nbsp;
+<br/>Fixes:
+<br/>&nbsp;
+<br/>- <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/9541692436c40ca83d8653e2430833f26a7cc17defae41edbe06b6a851fc8521/https%3A//github.com/gorhill/uBlock/issues/394">Closing a window doesn't remove its tabs from the network logger picker</a>
+<br/>- <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/dd1358f554197004b9693589be64b5359faafb6d560ec0707d18308dcb542013/https%3A//github.com/gorhill/uBlock/issues/399">3rd-party filters gone until settings reset</a> (SeaMonkey)
+<br/>- <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/418d4c92d30474b1c9dc47f8f803dae455a48e8f4202d47c29f8f8f6fb7c6655/https%3A//github.com/gorhill/uBlock/issues/391">Problem with Ublock Origin's URL logger behaviour</a>
+<br/>&nbsp;
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/d50c1ae15a905b8307caf93d6ca173cd664a551c3b3b84467e6ddd3b789bf83b/https%3A//github.com/gorhill/uBlock/compare/0.9.9.2...0.9.9.3">Commit history between 0.9.9.2 and 0.9.9.3</a>.
+
+<h2>uBlock Origin 0.9.9.2 - July  2, 2015</h2>
+Summary of <a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/8a621a601802fb9f6027db441702b9b77226f66d106f9c512e4b15621a06a2a8/https%3A//github.com/gorhill/uBlock/releases/tag/0.9.9.2">changes</a>:
+<br/>&nbsp;
+<br/>- Support for pre-Australis toolbar, courtesy of <a rel="nofollow" href="https://addons.mozilla.org/en-US/firefox/user/AlexV/">Alex Vallat</a> from <a rel="nofollow" href="https://addons.mozilla.org/en-US/firefox/addon/ublock/">uBlock</a>.
+<br/>- Some popups could be wrongly blocked to due to false positives (regression).
+<br/>&nbsp;
+<br/><a rel="nofollow" href="https://outgoing.prod.mozaws.net/v1/4043e81b5803772c3ffb8de9daece8216e9c0d24ce90bc81101c73d8121aad67/https%3A//github.com/gorhill/uBlock/compare/0.9.9.1...0.9.9.2">Commit history between 0.9.9.1 and 0.9.9.2</a>.
+
+<h2>uBlock Origin 0.9.8.2 - May 30, 2015</h2>
+[no description]
+
+<h2>uBlock Origin 0.9.8.1.1-signed - May 27, 2015</h2>
+[no description]
+
+<h2>uBlock Origin 0.9.7.5.1-signed - May 19, 2015</h2>
+[no description]
+
+</body>
+</html>

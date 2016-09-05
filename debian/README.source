@@ -1,0 +1,57 @@
+<!-- -*- mode: markdown; -*- -->
+
+# Handling new upstream releases #
+
+Upstream recently moved their third party assets to a separate git
+repository.  Their build scripts clone this git repository as part of
+the build.  The stated purpose is for easier repository access control
+and bug triage: as far as Debian is concerned, the assets repository
+does not belong in its own source package.
+
+To work around this we maintain a pre-DFSG upstream branch which has
+the third party assets present as a git-subtree(1).  New upstream
+versions are merged into this branch.  We then perform DFSG-cleaning
+on an emphemeral branch and tag the result, so that gbp can generate
+orig tarballs.  Finally the tag is merged into our master Debian
+packaging branch.  Step-by-step, supposing upstream releases version
+1.2.3:
+
+1. git remote add upstream https://github.com/gorhill/uBlock
+2. git remote update
+3. git checkout pre-dfsg
+4. git merge 1.2.3
+5. git subtree pull -P uAssets https://github.com/uBlockOrigin/uAssets master
+6. git checkout -b upstream pre-dfsg
+7. git show master:debian/clean-dfsg.sh | sh
+8. git commit -m "new upstream version 1.2.3 DFSG-cleaned"
+9. git tag 1.2.3+dfsg
+10. git checkout master
+11. git branch -D upstream
+12. git merge 1.2.3+dfsg
+13. Update debian/changelog for new version.
+14. Ensure that debian/copyright is up-to-date with {u,}assets/ublock/
+    dir.
+    Find new non-free filters: `git diff --stat 1.2.2+dfsg..1.2.3+dfsg --  uAssets/thirdparties/`
+15. Update the upstream changelog with `debian/rules get-orig-changelog`.
+16. Cut the Debian release with gbp buildpackage.
+17. Commit the generated *.orig.tar.xz file with pristine-tar.
+18. git push alioth --tags :
+19. Upload to ftp-master with your favourite tool
+
+## Possible improvements ##
+
+TODO: fold steps 2--11 into clean-dfsg.sh e.g. `% clean-dfsg.sh 1.2.3`
+
+TODO: instead, maintain a dfsg-clean branch with the deletions.  Then
+can just do: git merge new.version && git tag new.version-dfsg
+
+## Original setup of the pre-dfsg branch ##
+
+1. git checkout -b pre-dfsg 1.2.2
+2. git subtree add -P uAssets https://github.com/uBlockOrigin/uAssets master
+
+# Other things that should be checked when making a new release #
+
+1. Conkeror support fixed?  Maybe the patch disabling it can be dropped.
+
+ -- Sean Whitton <spwhitton@spwhitton.name>, Sun, 26 Jun 2016 09:29:09 +0900

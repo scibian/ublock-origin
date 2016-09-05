@@ -1,0 +1,26 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with xul-ext --buildsystem=xul_ext
+
+
+override_dh_auto_build:
+	./tools/make-firefox.sh
+	xpi-pack dist/build/uBlock0.firefox xul-ext-ublock-origin.xpi
+
+
+override_dh_auto_install:
+	install-xpi xul-ext-ublock-origin.xpi -x LICENSE.txt
+
+
+override_dh_auto_clean:
+	./tools/make-clean.sh
+	rm -f *.xpi
+
+
+override_dh_installchangelogs:
+	dh_installchangelogs debian/upstream/changelog.html debian/upstream/changelog
+
+.PHONY: get-orig-changelog
+get-orig-changelog:
+	amo-changelog -p rst ublock-origin

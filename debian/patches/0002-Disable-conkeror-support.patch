@@ -1,0 +1,26 @@
+Description: Disable conkeror support
+ Pending a fix of upstream bug #1356.  At present conkeror doesn't
+ recognise ublock-origin, so prevent dh_xul-ext from generating a
+ Enhances: etc. on conkeror.
+Author: Sean Whitton <spwhitton@spwhitton.name>
+Forwarded: not-needed
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/platform/firefox/install.rdf
++++ b/platform/firefox/install.rdf
+@@ -52,15 +52,6 @@
+             </r:Description>
+         </targetApplication>
+ 
+-        <!-- Conkeror -->
+-        <targetApplication>
+-            <r:Description>
+-                <id>{{a79fe89b-6662-4ff4-8e88-09950ad4dfde}}</id>
+-                <minVersion>0.1</minVersion>
+-                <maxVersion>9.9</maxVersion>
+-            </r:Description>
+-        </targetApplication>
+-
+         <!-- Thunderbird -->
+         <targetApplication>
+             <r:Description>

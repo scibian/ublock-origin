@@ -1,0 +1,78 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: uBlock Origin
+Source: https://github.com/gorhill/uBlock
+Files-Excluded: assets/thirdparties/adblock.gardar.net
+                assets/thirdparties/adblock.schack.dk
+                assets/thirdparties/dl.dropboxusercontent.com
+                assets/thirdparties/easylist-downloads.adblockplus.org/liste_fr.txt
+                assets/thirdparties/hosts-file.net
+                assets/thirdparties/liste-ar-adblock.googlecode.com
+                assets/thirdparties/mirror1.malwaredomains.com
+                assets/thirdparties/pgl.yoyo.org
+                assets/thirdparties/raw.githubusercontent.com/reek
+                assets/thirdparties/someonewhocares.org
+                assets/thirdparties/stanev.org
+                assets/thirdparties/winhelp2002.mvps.org
+                assets/thirdparties/www.fanboy.co.nz/fanboy-antifacebook.txt
+                assets/thirdparties/www.zoso.ro
+                assets/thirdparties/home.fredfiber.no
+                uAssets/thirdparties/mirror1.malwaredomains.com
+                uAssets/thirdparties/pgl.yoyo.org
+
+Files: *
+Copyright: (C) 2014-2016 The uBlock Origin authors
+ (C) 2014-2016 Raymond Hill
+License: GPL-3+
+
+Files: uAssets/thirdparties/easylist-downloads.adblockplus.org/easylist.txt
+       uAssets/thirdparties/easylist-downloads.adblockplus.org/easyprivacy.txt
+Copyright: (C) 2015 The EasyList authors (https://easylist.adblockplus.org/)
+License: GPL-3+ or CC-BY-SA-3.0+
+
+Files: assets/thirdparties/publicsuffix.org/list/effective_tld_names.dat
+       uAssets/thirdparties/publicsuffix.org/list/effective_tld_names.dat
+Copyright: (C) 2011-2015 Mozilla Foundation and contributors
+License: MPL-2.0
+
+Files: uAssets/thirdparties/www.malwaredomainlist.com/hostslist/hosts.txt
+Copyright: (C) 2015 www.malwaredomainlist.com
+License: custom1
+ Our list can be used for free by anyone. Feel free to use it.
+
+Files: debian/*
+Copyright: (C) 2015 Matthew Bekkema <mbekkema97@gmail.com>
+ (C) 2016 Sean Whitton <spwhitton@spwhitton.name>
+License: GPL-3+
+
+Files: debian/upstream/*
+Copyright: (C) 2014-2016 The uBlock Origin authors
+License: GPL-3+
+
+License: GPL-3+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or (at
+ your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
+
+License: CC-BY-SA-3.0+
+ This work is licensed under a Creative Commons Attribution-ShareAlike
+ 3.0 Unported License.
+ .
+ The complete text of the Creative Commons Attribution-ShareAlike 3.0
+ Unported License can be found at https://creativecommons.org/licenses/by-sa/3.0/.
+
+License: MPL-2.0
+ This Source Code Form is subject to the terms of the Mozilla Public License,
+ v. 2.0. If a copy of the MPL was not distributed with this file,
+ You can obtain one at http://mozilla.org/MPL/2.0/.

@@ -1,0 +1,30 @@
+From: Matthew Bekkema <mbekkema97@gmail.com>
+Date: Sat, 23 May 2015 17:56:03 +1000
+Subject: Disable-nonfree-filters-by-default
+
+Nonfree filters have been removed from this package but they are
+automatically redownloaded if they are enabled. This patch disables
+those filters by default.
+---
+ assets/ublock/filter-lists.json | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/assets/ublock/filter-lists.json b/assets/ublock/filter-lists.json
+index 86c0fce..5f69641 100644
+--- a/assets/ublock/filter-lists.json
++++ b/assets/ublock/filter-lists.json
+@@ -231,12 +231,14 @@
+ 		"supportURL": "http://www.malwaredomains.com/"
+ 	},
+ 	"mirror1.malwaredomains.com/files/justdomains": {
++		"off": true,
+ 		"title": "Malware domains",
+ 		"group": "malware",
+ 		"homeURL": "https://mirror.cedia.org.ec/malwaredomains/justdomains",
+ 		"supportURL": "http://www.malwaredomains.com/"
+ 	},
+ 	"pgl.yoyo.org/as/serverlist": {
++		"off": true,
+ 		"title": "Peter Lowe’s Ad server list",
+ 		"group": "ads",
+ 		"homeURL": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext",

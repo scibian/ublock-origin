@@ -1,0 +1,24 @@
+Source: ublock-origin
+Section: web
+Priority: optional
+Maintainer: Debian Mozilla Extension Maintainers <pkg-mozext-maintainers@lists.alioth.debian.org>
+Uploaders: Sean Whitton <spwhitton@spwhitton.name>
+Build-Depends: debhelper (>= 9), mozilla-devscripts
+Standards-Version: 3.9.8
+Homepage: https://github.com/gorhill/uBlock
+Vcs-Git: https://anonscm.debian.org/git/pkg-mozext/ublock-origin.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-mozext/ublock-origin.git/
+
+Package: xul-ext-ublock-origin
+Architecture: all
+Depends: ${xpi:Depends}, ${misc:Depends}, fonts-font-awesome
+Recommends: ${xpi:Recommends}
+Breaks: ${xpi:Breaks}
+Provides: xul-ext-ublock, ${xpi:Provides}
+Enhances: ${xpi:Enhances}
+Description: general-purpose lightweight ads, malware, trackers blocker
+ uBlock is a small footprint blocker for against web ads, malware, trackers,
+ analytics and similar invasive items.
+ .
+ Compared to other blockers like AdBlock and Ghostery, µBlock is focused on
+ having a smaller memory and CPU footprint.
