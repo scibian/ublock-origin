@@ -3,3 +3,4 @@
 0003-patch-make-assets.sh-for-Debian.patch
 1001-fix-incomplete-Debian-patch.patch
 1002-add-french-and-anti-adblock-list.patch
+1003-include-more-lists.patch
