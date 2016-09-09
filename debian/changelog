@@ -1,3 +1,13 @@
+ublock-origin (1.9.4+dfsg-1scibian1) jessie; urgency=low
+
+  * Include Font Awesome: Debian package fonts-font-awesome is outdated 
+  * Fix incomplete Debian patch 0003-patch-make-assets.sh-for-Debian.patch
+  * Add Easylist FR and Anti-Adblock Killer lists
+  * Include more offline lists
+  * Remove 0001-Disable-nonfree-filters-by-default.patch
+
+ -- Scibian Packaging Team <packaging@scibian.org>  Fri, 09 Sep 2016 16:56:57 +0200
+
 ublock-origin (1.9.4+dfsg-1) unstable; urgency=medium
 
   * New upstream release.
