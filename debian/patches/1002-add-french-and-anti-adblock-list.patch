@@ -1,0 +1,21 @@
+Description: Add Easylist FR and Anti-Adblock Killer lists
+Author: Scibian Packaging Team <packaging@scibian.org>
+
+--- a/assets/ublock/filter-lists.json
++++ b/assets/ublock/filter-lists.json
+@@ -109,7 +109,6 @@
+ 		"supportURL": "https://forums.lanik.us/"
+ 	},
+ 	"https://easylist-downloads.adblockplus.org/liste_fr.txt": {
+-		"off": true,
+ 		"title": "FRA: EasyList Liste FR",
+ 		"group": "regions",
+ 		"lang": "fr",
+@@ -250,7 +249,6 @@
+ 		"supportURL": "https://github.com/easylist/EasyListHebrew"
+ 	},
+ 	"https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt": {
+-		"off": true,
+ 		"title": "Anti-Adblock Killer | Reek",
+ 		"group": "ads",
+ 		"supportURL": "https://github.com/reek/anti-adblock-killer",
