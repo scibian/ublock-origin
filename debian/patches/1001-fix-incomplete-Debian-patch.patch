@@ -1,0 +1,13 @@
+Description: Fix incomplete Debian patch 0003-patch-make-assets.sh-for-Debian.patch
+Author: Scibian Packaging Team <packaging@scibian.org>
+
+--- a/tools/make-assets.sh
++++ b/tools/make-assets.sh
+@@ -18,6 +18,6 @@
+ cp -R ./uAssets/filters/*                                       $DES/ublock/
+ cp -R ./assets/ublock/filter-lists.json                          $DES/ublock/
+ 
+-cp ../uAssets/checksums/ublock0.txt                              $DES/checksums.txt
++cp ./uAssets/checksums/ublock0.txt                              $DES/checksums.txt
+ 
+ echo "done."
