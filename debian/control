@@ -11,7 +11,7 @@ Vcs-Browser: https://anonscm.debian.org/cgit/pkg-mozext/ublock-origin.git/
 
 Package: xul-ext-ublock-origin
 Architecture: all
-Depends: ${xpi:Depends}, ${misc:Depends}, fonts-font-awesome
+Depends: ${xpi:Depends}, ${misc:Depends}
 Recommends: ${xpi:Recommends}
 Breaks: ${xpi:Breaks}
 Provides: xul-ext-ublock, ${xpi:Provides}

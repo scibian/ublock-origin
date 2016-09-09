@@ -1,2 +1,0 @@
-# override experimental warning false positive: symlink is not broken
-package-contains-broken-symlink usr/share/xul-ext/ublock-origin/css/fonts/fontawesome-webfont.ttf *
